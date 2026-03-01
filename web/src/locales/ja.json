@@ -1,0 +1,910 @@
+{
+  "pages": {
+    "landing": {
+      "poem": "",
+      "headingBefore": "",
+      "headingAfter": " のようなノートリポジトリ 🤔",
+      "linksItems": ["ログイン", "", "GitHub"],
+      "dashboard": "ダッシュボード",
+      "star": "スター",
+      "fork": "フォーク",
+      "issues": "イシュー",
+      "watch": "ウォッチ",
+      "lastPushTime": "最終プッシュ時間：",
+      "coreFeatures": {
+        "title": "コア機能",
+        "subtitle": "より洗練されたノート体験と少ない精神的負担のために",
+        "tagline": "CORE FEATURES",
+        "features": {
+          "restraint": {
+            "title": "控えめに",
+            "description": "洗練されたノート体験のためのすべて"
+          },
+          "simple": {
+            "title": "シンプルでありながら強力",
+            "description": "すべての機能はWebに限定され、より良い体験のためにPWAを提供"
+          },
+          "openApi": {
+            "title": "オープンインターフェース",
+            "description": "オープンAPIインターフェース、あらゆるシナリオでデータの記録や取得をサポート"
+          },
+          "freedom": {
+            "title": "制約のない自由",
+            "description": "データを完全にコントロールし、自由にデータをエクスポート"
+          }
+        }
+      },
+      "construction": {
+        "title": "まだ構築中...",
+        "subtitle": "長期プロジェクトとして、Roteはまだ改善中です",
+        "tagline": "STILL UNDER CONSTRUCTION"
+      },
+      "exploreMore": {
+        "title": "さらに探索",
+        "subtitle": "ここには遊べるボタンがいくつかあります",
+        "tagline": "EXPlORE MORE"
+      },
+      "redirectingToSetup": {
+        "error": "バックエンドエラーが検出されました。セットアップページにリダイレクトしています",
+        "notInitialized": "システムが初期化されていません。セットアップページにリダイレクトしています"
+      },
+      "typewriterTexts": [
+        "個人ノートリポジトリ",
+        "思考ノートブック",
+        "プライベートTwitter",
+        "個人チャンネル",
+        "マイクロブログ"
+      ],
+      "subtitle": "オープンAPI、記録方法は複数🤩、Self-Hostedをサポート、自分のデータをコントロールし、自由に出入り、データの人質化なし🙅🏻",
+      "iosAppTooltip": {
+        "title": "iOS ベータ版に参加しませんか？",
+        "earlyAccess": "早期アクセス"
+      },
+      "andMore": {
+        "tagline": "AND MORE",
+        "title": "これらに加えて、さらに...",
+        "subtitle": "洗練されたアーキテクチャ設計、デプロイメントオプション、優れたクライアント体験",
+        "features": {
+          "selfHosted": {
+            "title": "セルフホスティングデプロイメント",
+            "description": "Docker または Dokploy でワンクリックデプロイメント"
+          },
+          "tools": {
+            "title": "小さなツール",
+            "description": "ランダムレビュー、タグクラウド、OAuth、RSS、EveDayOneCat..."
+          },
+          "architecture": {
+            "title": "分離アーキテクチャ",
+            "description": "フロントエンドとバックエンドが分離され、必要なものだけをデプロイ"
+          },
+          "iosClient": {
+            "title": "iOS クライアント",
+            "description": "より洗練されたアプリクライアント"
+          }
+        }
+      },
+      "quickLinks": {
+        "selfHosted": "セルフホスティングガイド",
+        "github": "Github",
+        "explore": "Rote を探索",
+        "rabithua": "Rabithua"
+      }
+    },
+    "mine": {
+      "leftNavBar": {
+        "home": "ホーム",
+        "explore": "探索",
+        "archived": "アーカイブ",
+        "profile": "プロフィール",
+        "experiment": "実験",
+        "admin": "管理",
+        "fold": "折りたたむ",
+        "login": "ログイン",
+        "logout": "ログアウト"
+      },
+      "messages": {
+        "loggingOut": "ログアウト中...",
+        "logoutSuccess": "ログアウト成功",
+        "logoutFailed": "ログアウト失敗",
+        "logoutConfirmTitle": "ログアウトの確認",
+        "logoutConfirmDescription": "ログアウトしてもよろしいですか？",
+        "logoutConfirm": "ログアウトを確認",
+        "cancel": "キャンセル"
+      }
+    },
+    "error": {
+      "pageNotFound": "ページが見つからないか、エラーが発生しました",
+      "pageNotFoundDesc": "申し訳ございませんが、お探しのページが見つかりませんでした"
+    },
+    "login": {
+      "authorize": {
+        "title": "ログイン認証",
+        "message": "Rote Web App を Rote iOS App に {{username}} としてログインすることを承認しようとしています",
+        "button": "ログインを認証"
+      },
+      "messages": {
+        "loggingIn": "ログイン中...",
+        "loginSuccess": "ログイン成功",
+        "backendDown": "バックエンドサービスが利用できません",
+        "registering": "登録中...",
+        "registerSuccess": "登録成功",
+        "oauthLoginSuccess": "GitHub ログイン成功",
+        "oauthCancelled": "GitHub 認証がキャンセルされました",
+        "appleLoginSuccess": "Apple ログイン成功",
+        "appleCancelled": "Apple 認証がキャンセルされました"
+      },
+      "oauth": {
+        "or": "または"
+      },
+      "fields": {
+        "username": "ユーザー名",
+        "usernameOrEmail": "ユーザー名またはメールアドレス",
+        "usernameOrEmailPlaceholder": "username or email",
+        "password": "パスワード",
+        "email": "メールアドレス",
+        "nickname": "ニックネーム"
+      },
+      "buttons": {
+        "login": "ログイン",
+        "register": "登録",
+        "loginWithGitHub": "GitHub でログイン",
+        "loginWithApple": "Apple でサインイン"
+      },
+      "nav": {
+        "explore": "探索",
+        "home": "ホーム"
+      },
+      "error": {
+        "backendIssue": "バックエンドサービスの問題",
+        "dockerDeployment": "Docker デプロイメントを使用している場合、バックエンドコンテナの構築に数分かかる場合があります。後でページを更新してください。"
+      },
+      "usernameRequired": "ユーザー名は必須です",
+      "usernameOrEmailRequired": "ユーザー名またはメールアドレスは必須です",
+      "usernameMaxLength": "ユーザー名は20文字以内で入力してください",
+      "usernameFormat": "ユーザー名は英字、数字、アンダースコア、ハイフンのみ使用できます",
+      "usernameConflict": "このユーザー名はシステムルートと競合しています",
+      "passwordRequired": "パスワードは必須です",
+      "passwordMin": "パスワードは6文字以上で入力してください",
+      "passwordMaxLength": "パスワードは128文字以内で入力してください",
+      "emailRequired": "メールアドレスは必須です",
+      "emailMaxLength": "メールアドレスは30文字以内で入力してください",
+      "emailFormat": "無効なメールアドレス形式です",
+      "nicknameRequired": "ニックネームは必須です",
+      "nicknameMaxLength": "ニックネームは20文字以内で入力してください"
+    },
+    "home": {
+      "statistics": "統計"
+    },
+    "profile": {
+      "title": "プロフィール",
+      "editProfile": "プロフィールを編集",
+      "noDescription": "この人は怠け者で、まだ説明を残していません...",
+      "registerTime": "登録時間：",
+      "openKeyDescription": "OpenKey を使用すると、権限固有の機能に簡単にアクセスできます。OpenKey の漏洩による不要なトラブルを避けるため、適切に権限を割り当ててください。",
+      "noOpenKey": "まだ OpenKey がありません。生成しますか？",
+      "addOpenKey": "OpenKey を生成",
+      "email": "メールアドレス",
+      "username": "ユーザー名",
+      "nickname": "ニックネーム",
+      "description": "説明",
+      "enterNickname": "ニックネームを入力...",
+      "enterDescription": "説明を入力...",
+      "editing": "編集中...",
+      "save": "保存",
+      "cropAvatar": "アバターを切り抜き",
+      "uploading": "アップロード中...",
+      "done": "完了",
+      "creating": "作成中...",
+      "createSuccess": "作成成功",
+      "createFailed": "作成失敗",
+      "uploadSuccess": "アップロード成功",
+      "uploadFailed": "アップロード失敗",
+      "heicNotSupported": "HEIC 形式はサポートされていません。別の形式（JPEG、PNG など）を選択してください。",
+      "editSuccess": "編集成功",
+      "editFailed": "編集失敗",
+      "sideBarTitle": "さらに... 他にも",
+      "settings": {
+        "themeLabel": "テーマモード",
+        "themeDescription": "ダーク・ライト・システムから選択できます。",
+        "themeSystem": "システムに従う",
+        "themeLight": "ライトモード",
+        "themeDark": "ダークモード",
+        "languageLabel": "言語",
+        "languageDescription": "インターフェースの表示言語を選択します。",
+        "title": "追加設定",
+        "allowExploreLabel": "公開ノートを探索ページに表示する",
+        "allowExploreDescription": "オフにすると、公開ノートは直接リンクでアクセス可能ですが、探索ページでは推奨されません。",
+        "save": "設定を保存",
+        "saving": "保存中…",
+        "saveSuccess": "設定を保存しました",
+        "saveFailed": "保存に失敗しました：{{error}}",
+        "oauth": {
+          "title": "アカウント連携",
+          "description": "サードパーティアカウントを連携して、複数のログイン方法を有効にします",
+          "bindSuccess": "アカウントの連携に成功しました",
+          "bindFailed": "連携に失敗しました：{{error}}",
+          "unbindSuccess": "アカウントの連携を解除しました",
+          "unbindFailed": "連携解除に失敗しました：{{error}}",
+          "mergeSuccess": "アカウントの連携に成功しました。アカウントデータがマージされました",
+          "mergeFailed": "アカウントのマージに失敗しました：{{error}}",
+          "mergeDialog": {
+            "title": "アカウントマージの確認",
+            "description": "このアカウントは既に別のアカウントにリンクされています。マージ後、そのアカウントのすべてのデータ（ノート、添付ファイルなど）が現在のアカウントに移行され、元のアカウントは削除されます。",
+            "existingAccount": "既存のアカウント",
+            "currentAccount": "現在のアカウント",
+            "warning": "警告：この操作は取り消せません。これがあなたのアカウントであることを確認してください。",
+            "cancel": "キャンセル",
+            "confirm": "マージを確認",
+            "merging": "マージ中…"
+          },
+          "github": {
+            "notBound": "未連携",
+            "bind": "GitHub を連携",
+            "unbind": "GitHub の連携を解除",
+            "binding": "連携中…",
+            "unbinding": "連携解除中…"
+          },
+          "apple": {
+            "notBound": "未連携",
+            "bind": "Apple を連携",
+            "unbind": "Apple の連携を解除",
+            "binding": "連携中…",
+            "unbinding": "連携解除中…"
+          }
+        },
+        "deleteAccount": {
+          "title": "アカウント削除",
+          "description": "アカウントを削除すると、ノート、添付ファイルなど、すべてのデータが永久に削除されます。この操作は取り消せません。",
+          "button": "アカウントを削除",
+          "confirmTitle": "アカウント削除の確認",
+          "warning": "この操作により、アカウントとすべての関連データ（すべてのノート、添付ファイルなど）が永久に削除されます。この操作は取り消せません。十分注意して進めてください。",
+          "passwordLabel": "削除を確認するためにパスワードを入力してください",
+          "passwordPlaceholder": "パスワード",
+          "passwordRequired": "パスワードは必須です",
+          "cancel": "キャンセル",
+          "confirm": "削除を確認",
+          "deleting": "削除中…",
+          "success": "アカウントを削除しました",
+          "failed": "アカウントの削除に失敗しました：{{error}}"
+        }
+      }
+    },
+    "rote": {
+      "sideBarTitle": "関連情報"
+    },
+    "article": {
+      "title": "記事の詳細",
+      "sideBarTitle": "関連情報",
+      "relatedNote": "関連ノート"
+    },
+    "user": {
+      "noDescription": "この人は怠け者で、まだ説明を残していません...",
+      "registerTime": "登録時間：",
+      "publicNotes": "公開ノート",
+      "rssSubscribe": "RSS フィード",
+      "sideBarTitle": "さらに... 他にも",
+      "helmet": {
+        "loading": "読み込み中...",
+        "defaultDesc": "rote.ink"
+      }
+    },
+    "filter": {
+      "title": "フィルター",
+      "includeTags": "含むタグ：",
+      "allTags": "すべてのタグ：",
+      "none": "なし",
+      "data": "データ統計",
+      "note": "ノート",
+      "attachment": "添付ファイル"
+    },
+    "explore": {
+      "title": "探索",
+      "sideBarTitle": "探索✨",
+      "star": "スター",
+      "fork": "フォーク",
+      "issues": "イシュー",
+      "watch": "ウォッチ",
+      "githubOpenSource": "Rote は Github でオープンソースです。スターをお願いします！",
+      "lastPushTime": "最終プッシュ時間："
+    },
+    "experiment": {
+      "title": "実験",
+      "description": "Roteをより使いやすくする可能性のある実験的機能 🤩",
+      "exportData": {
+        "title": "データエクスポート",
+        "description": "完全なデータをJSON形式でエクスポートして、他の場所で使用します。",
+        "noteCount": "ノート数",
+        "attachmentCount": "添付ファイル数",
+        "downloadJson": "JSONデータをダウンロード",
+        "downloading": "ダウンロード中..."
+      },
+      "importData": {
+        "title": "データインポート",
+        "description": "他のノートプラットフォームからデータをインポートします。",
+        "notSupported": "現在サポートされていません。",
+        "notesFound": "ノートが見つかりました",
+        "attachmentsFound": "添付ファイルが見つかりました",
+        "dialogTitle": "使用手順",
+        "dialogDescription": "以下のJSON形式に一致するファイルをアップロードしてください。",
+        "dialogExample": "JSONの例",
+        "dialogNote": "システムはノートIDに基づいて照合します。IDが存在し、あなたのものである場合、ノートの内容が更新されます。IDが存在しない場合、新しいノートが作成されます。ネストされた添付データも処理されます。",
+        "convertToolHint": "他のプラットフォームからデータを移行したい場合は、当社のデータ変換ツールを使用できます：",
+        "convertToolLinkName": "Rerote - Rote データ変換ツール",
+        "fileParsed": "{{count}} 件のノートを解析しました",
+        "invalidFormat": "無効なファイル形式です。有効な JSON ファイルをアップロードしてください。",
+        "parseError": "JSON ファイルの解析に失敗しました",
+        "importSuccess": "インポート成功！処理済み: {{count}}, 作成: {{created}}, 更新: {{updated}}",
+        "importFailed": "インポートに失敗しました",
+        "clickToUpload": "クリックしてファイルをアップロード",
+        "cancel": "キャンセル",
+        "importing": "インポート中...",
+        "confirmImport": "インポートを確認"
+      },
+      "serviceWorker": {
+        "title": "ServiceWorker 通知",
+        "description": "ServiceWorkerは、バックグラウンド通知などの高度な機能を有効にします。",
+        "status": "ステータス：",
+        "serviceId": "サービスID：",
+        "notificationTest": "通知をテスト",
+        "sending": "送信中...",
+        "sendSuccess": "送信成功！",
+        "sendFailed": "送信失敗",
+        "example": "使用例：",
+        "notSupported": "現在のブラウザはServiceWorkerをサポートしていません",
+        "swNotActive": "ServiceWorkerがアクティブではありません。ページを更新してください"
+      },
+      "subscriptions": {
+        "title": "購読済み通知エンドポイント",
+        "testAllEndpoints": "すべてのエンドポイントをテスト",
+        "testNotification": "通知をテスト",
+        "deleteSubscription": "購読を削除",
+        "statusActive": "アクティブ",
+        "statusInactive": "非アクティブ",
+        "testNotificationContent": {
+          "title": "Rote ブログ",
+          "body": "これは私のブログです。"
+        },
+        "messages": {
+          "testingAllEndpoints": "すべてのエンドポイントをテスト中...",
+          "testCompleted": "テスト完了！成功：{{success}}、失敗：{{failed}}",
+          "testFailed": "テストに失敗しました：{{error}}",
+          "deletingSubscription": "購読を削除中...",
+          "deleteSuccess": "購読を削除しました",
+          "deleteFailed": "削除に失敗しました：{{error}}",
+          "testNotificationSent": "テスト通知を送信しました",
+          "confirmDelete": "この購読を削除してもよろしいですか？",
+          "clearInvalid": "無効なエンドポイントを削除",
+          "clearingInvalid": "削除中...",
+          "clearSuccess": "削除完了！{{count}} 個の無効なエンドポイントを削除しました。",
+          "clearFailed": "削除失敗: {{error}}",
+          "clearConfirm": "{{count}} 個の無効なエンドポイントが見つかりました。削除しますか？"
+        },
+        "noSubscriptions": "購読済み通知エンドポイントがありません"
+      }
+    },
+    "archived": {
+      "title": "アーカイブ",
+      "statistics": "統計"
+    },
+    "setupPage": {
+      "statusChecking": "システムステータスを確認中...",
+      "error": {
+        "title": "システムステータス確認失敗",
+        "description": "バックエンドサービスに接続できません。バックエンドサービスが正常に実行されているか確認してください。",
+        "backendHint": "Docker デプロイメントを使用している場合、バックエンドコンテナの構築に数分かかる場合があります。後でページを更新してください。",
+        "retry": "再試行"
+      }
+    },
+    "setupWizard": {
+      "title": "Rote セットアップウィザード",
+      "subtitle": "Roteへようこそ！手順に従ってセットアップを完了してください",
+      "steps": {
+        "basic": {
+          "title": "基本設定",
+          "description": "サイトの基本を設定"
+        },
+        "storage": {
+          "title": "ストレージ設定",
+          "description": "S3ストレージを設定（オプション）"
+        },
+        "admin": {
+          "title": "管理者アカウント",
+          "description": "管理者アカウントを作成"
+        }
+      },
+      "labels": {
+        "siteName": "サイト名",
+        "siteDescription": "サイト説明",
+        "frontendUrl": "フロントエンドURL",
+        "storageType": "ストレージタイプ",
+        "cos": "Tencent COS",
+        "customEndpoint": "カスタム S3 (Garage/MinIO)",
+        "accountId": "R2 アカウント ID",
+        "endpoint": "S3 エンドポイント",
+        "cosEndpoint": "COS エンドポイント",
+        "accessKey": "アクセスキー",
+        "secretKey": "シークレットキー",
+        "bucket": "バケット名",
+        "region": "リージョン",
+        "urlPrefix": "URLプレフィックス",
+        "username": "ユーザー名",
+        "email": "メールアドレス",
+        "password": "パスワード",
+        "nickname": "ニックネーム"
+      },
+      "placeholders": {
+        "siteName": "サイト名を入力",
+        "siteDescription": "サイト説明を入力",
+        "frontendUrl": "https://your-domain.com",
+        "accountId": "your-r2-account-id",
+        "endpoint": "http://localhost:3900",
+        "cosEndpoint": "https://cos.ap-shanghai.myqcloud.com",
+        "accessKey": "S3アクセスキーを入力",
+        "secretKey": "S3シークレットキーを入力",
+        "bucket": "バケット名を入力",
+        "region": "auto",
+        "cosRegion": "ap-shanghai",
+        "urlPrefix": "https://bucket.your-domain.com",
+        "adminUsername": "管理者ユーザー名を入力",
+        "adminEmail": "管理者メールアドレスを入力",
+        "adminPassword": "管理者パスワードを入力",
+        "adminNickname": "管理者ニックネームを入力"
+      },
+      "descriptions": {
+        "frontendUrl": "フロントエンドURLは、フロントエンドアクセスアドレスを識別するために使用され、RSSフィードでリンクを生成するために使用されます。完全なURL（例：https://your-domain.com）を入力してください。",
+        "storageType": "Cloudflare R2、Tencent COS、またはカスタム S3 互換ストレージ（Garage、MinIO、AWS S3 など）を選択",
+        "endpoint": "S3 API エンドポイント URL（例：Garage の http://localhost:3900）",
+        "cosEndpoint": "COS API エンドポイント URL（例：https://cos.ap-shanghai.myqcloud.com、バケット名は不要）",
+        "region": "S3リージョン、デフォルトは 'auto'",
+        "cosRegion": "COS リージョン（必須、例：ap-shanghai）",
+        "urlPrefix": "アップロードされたファイルにアクセスするための公開URLプレフィックス（必須）、これは実際に保存されたリソースにアクセスするために使用されるドメイン名です",
+        "s3Optional": "S3ストレージ設定はオプションです。このステップをスキップして、後でシステム設定で設定することもできます。スキップした場合、システムは添付ファイルをアップロードできませんが、他の機能は正常に動作します。"
+      },
+      "validation": {
+        "siteNameRequired": "サイト名は必須です",
+        "frontendUrlRequired": "フロントエンドURLは必須です",
+        "frontendUrlInvalid": "有効なURLを入力してください（http:// または https:// で始まる）",
+        "accountIdRequired": "S3アカウントIDは必須です",
+        "endpointRequired": "S3 エンドポイントは必須です",
+        "endpointInvalid": "有効なエンドポイントURLを入力してください（http:// または https:// で始まる）",
+        "cosEndpointInvalid": "COS エンドポイントは https://cos.{region}.myqcloud.com である必要があります",
+        "accessKeyRequired": "アクセスキーは必須です",
+        "secretKeyRequired": "シークレットキーは必須です",
+        "bucketRequired": "バケット名は必須です",
+        "regionRequired": "リージョンは必須です",
+        "urlPrefixRequired": "URLプレフィックスは必須です",
+        "urlPrefixInvalid": "有効なURLプレフィックスを入力してください（http:// または https:// で始まる）",
+        "usernameRequired": "ユーザー名は必須です",
+        "usernameReserved": "このユーザー名は予約されており、使用できません。別のユーザー名を選択してください。",
+        "emailRequired": "メールアドレスは必須です",
+        "emailInvalid": "有効なメールアドレスを入力してください",
+        "passwordRequired": "パスワードは必須です",
+        "passwordMin": "パスワードは6文字以上である必要があります",
+        "passwordMax": "パスワードは128文字以内で入力してください"
+      },
+      "buttons": {
+        "prev": "前へ",
+        "next": "次へ",
+        "finish": "セットアップを完了",
+        "saving": "保存中...",
+        "testConnection": "S3接続をテスト",
+        "skipS3": "S3設定をスキップ",
+        "testing": "接続をテスト中..."
+      },
+      "toasts": {
+        "systemInitialized": "システムが初期化されました。設定ページにリダイレクトしています",
+        "initSuccess": "システムの初期化に成功しました！",
+        "initFailed": "システムの初期化に失敗しました。設定を確認してください",
+        "testSuccess": "S3接続テストに成功しました！",
+        "testFailed": "接続テストに失敗しました：{{error}}",
+        "seeConsole": "詳細はコンソールを確認してください。",
+        "pleaseFillS3": "まずすべてのS3設定フィールドに入力してください"
+      }
+    },
+    "admin": {
+      "title": "管理ダッシュボード",
+      "accessDenied": "アクセス拒否",
+      "adminOnly": "このページは管理者のみアクセス可能です",
+      "tabs": {
+        "site": "サイト設定",
+        "storage": "ストレージ設定",
+        "ui": "システム設定",
+        "security": "セキュリティ設定",
+        "oauth": "OAuth ログイン",
+        "users": "ユーザー管理"
+      },
+      "site": {
+        "title": "サイト設定",
+        "description": "基本的なサイト情報を設定",
+        "name": "サイト名",
+        "descriptionLabel": "サイト説明",
+        "frontendUrl": "フロントエンドURL",
+        "frontendUrlDescription": "フロントエンドアクセスURL、RSSフィードでノートリンクを生成するために使用",
+        "icpRecord": "ICP記録番号",
+        "icpRecordDescription": "ウェブサイトICP記録番号、例：京ICP备12345678号",
+        "announcement": {
+          "title": "サイトのお知らせ",
+          "description": "探索ページの上部に表示されるお知らせ",
+          "content": "お知らせ内容",
+          "contentPlaceholder": "お知らせの内容を入力",
+          "link": "お知らせリンク",
+          "linkPlaceholder": "オプション、お知らせをクリックしたときのジャンプ先"
+        }
+      },
+      "storage": {
+        "title": "ストレージ設定",
+        "description": "S3クラウドストレージ設定を構成",
+        "storageType": "ストレージタイプ",
+        "storageTypeDescription": "Cloudflare R2、Tencent COS、またはカスタム S3 互換ストレージ（Garage、MinIO、AWS S3 など）を選択",
+        "cos": "Tencent COS",
+        "customEndpoint": "カスタム S3 (Garage/MinIO)",
+        "accountId": "R2 アカウント ID",
+        "accountIdPlaceholder": "your-r2-account-id",
+        "endpoint": "S3 エンドポイント",
+        "endpointPlaceholder": "http://localhost:3900",
+        "endpointDescription": "S3 API エンドポイントアドレス（例：Garage の http://localhost:3900）",
+        "cosEndpoint": "COS エンドポイント",
+        "cosEndpointPlaceholder": "https://cos.ap-shanghai.myqcloud.com",
+        "cosEndpointDescription": "COS API エンドポイントアドレス（例：https://cos.ap-shanghai.myqcloud.com、バケット名は不要）",
+        "bucket": "バケット",
+        "bucketPlaceholder": "bucket-name",
+        "accessKeyId": "アクセスキーID",
+        "accessKeyIdPlaceholder": "Access Key ID",
+        "secretAccessKey": "シークレットアクセスキー",
+        "secretAccessKeyPlaceholder": "Secret Access Key",
+        "region": "リージョン",
+        "regionPlaceholder": "auto",
+        "regionDescription": "S3リージョン、デフォルトは 'auto'",
+        "cosRegionPlaceholder": "ap-shanghai",
+        "cosRegionDescription": "COS リージョン（必須、例：ap-shanghai）",
+        "urlPrefix": "URLプレフィックス",
+        "urlPrefixPlaceholder": "https://your-cdn-domain.com",
+        "urlPrefixDescription": "アップロードされたファイルにアクセスするための公開URLプレフィックス（必須）、これは実際に保存されたリソースにアクセスするために使用されるドメイン名です",
+        "testConnection": "接続テスト",
+        "testing": "テスト中...",
+        "testSuccess": "ストレージ接続テスト成功！",
+        "testFailed": "接続テストに失敗しました：{{error}}",
+        "seeConsole": "詳細はコンソールを確認してください。",
+        "fillAllRequired": "すべての必須フィールドを入力してください",
+        "required": "必須",
+        "save": "保存",
+        "saving": "保存中...",
+        "saveSuccess": "保存に成功しました",
+        "saveFailed": "保存に失敗しました：{{error}}"
+      },
+      "ui": {
+        "title": "UI設定",
+        "description": "ユーザーインターフェース設定を構成",
+        "allowRegistration": "登録を許可",
+        "allowRegistrationDesc": "新しいユーザー登録を許可するかどうか",
+        "allowUploadFile": "ファイルアップロードを許可",
+        "allowUploadFileDesc": "ユーザーが添付ファイルをアップロードすることを許可するかどうか",
+        "defaultUserRole": "デフォルトユーザーロール",
+        "defaultUserRolePlaceholder": "デフォルトロールを選択",
+        "defaultUserRoleDescription": "新規登録ユーザーのデフォルトロール。user または moderator のみ選択可能。管理者ロールは手動で割り当てる必要があります。",
+        "roles": {
+          "user": "ユーザー",
+          "moderator": "モデレーター"
+        },
+        "apiRateLimit": "API レート制限",
+        "apiRateLimitDescription": "ユーザーまたはIPアドレスごとに許可される1秒あたりの最大リクエスト数。APIの悪用を防ぐために使用されます。最小値は10、デフォルトは100リクエスト/秒です。"
+      },
+      "security": {
+        "title": "セキュリティ設定",
+        "description": "メール確認要件などのセキュリティ関連ポリシーを設定",
+        "requireVerifiedEmailForExplore": "確認済みメールアドレスを持つユーザーのみ探索ページに表示",
+        "requireVerifiedEmailForExploreDesc": "有効にすると、確認済みメールアドレスを持つユーザーのみ、公開ノートが探索ページで推奨されます。既存の公開ノートは直接リンクで引き続きアクセス可能です。"
+      },
+      "oauth": {
+        "title": "OAuth ログイン設定",
+        "description": "GitHubなどのプラットフォーム経由でログインできるように、サードパーティOAuthプロバイダーのログイン設定を構成",
+        "enabled": "OAuth ログインを有効化",
+        "enabledDesc": "ユーザーがサードパーティOAuthプロバイダー（例：GitHub）経由でログインすることを許可",
+        "disabledHint": "OAuthは現在無効になっています。プロバイダーを設定した後、OAuthログインを有効にすると効果が発揮されます。",
+        "providers": {
+          "enabled": "{{provider}} OAuth を有効化",
+          "enabledDesc": "ユーザーが{{provider}}アカウントでログインすることを許可"
+        },
+        "github": {
+          "enabled": "GitHub OAuth を有効化",
+          "enabledDesc": "ユーザーがGitHubアカウントでログインすることを許可",
+          "clientId": "クライアントID",
+          "clientSecret": "クライアントシークレット",
+          "callbackUrl": "コールバックURL",
+          "callbackUrlDesc": "注意：このURLはバックエンドURLです。GitHub OAuth Appで設定されたコールバックURL、通常は：https://yourdomain.com/v2/api/auth/oauth/github/callback"
+        },
+        "apple": {
+          "enabled": "Apple OAuth を有効化",
+          "enabledDesc": "ユーザーがAppleアカウントでログインすることを許可",
+          "clientId": "サービスID（クライアントID）",
+          "clientIdPlaceholder": "Apple サービスID（クライアントID）",
+          "teamId": "チームID",
+          "teamIdPlaceholder": "Apple Developer チームID",
+          "keyId": "キーID",
+          "keyIdPlaceholder": "Apple キーID",
+          "privateKey": "秘密鍵",
+          "privateKeyPlaceholder": "Apple 秘密鍵（PEM形式）",
+          "callbackUrl": "コールバックURL",
+          "callbackUrlDesc": "注意：このURLはバックエンドURLです。Apple Developerで設定されたコールバックURL、通常は：https://yourdomain.com/v2/api/auth/oauth/apple/callback"
+        }
+      },
+      "users": {
+        "title": "ユーザー管理",
+        "description": "システム内のすべてのユーザーを管理",
+        "searchPlaceholder": "ユーザー名、メールアドレス、またはニックネームで検索",
+        "noUsers": "まだユーザーがいません",
+        "noUsersFound": "一致するユーザーが見つかりません",
+        "verifyEmailSuccess": "メールアドレスの確認に成功しました",
+        "verifyEmailFailed": "メールアドレスの確認に失敗しました：{{error}}",
+        "unverifyEmailSuccess": "メール認証を解除しました",
+        "unverifyEmailFailed": "メール認証の解除に失敗しました: {{error}}",
+        "deleteSuccess": "ユーザーを削除しました",
+        "deleteFailed": "ユーザーの削除に失敗しました：{{error}}",
+        "table": {
+          "username": "ユーザー名",
+          "avatar": "アバター",
+          "email": "メールアドレス",
+          "nickname": "ニックネーム",
+          "role": "ロール",
+          "emailVerified": "メール確認済み",
+          "createdAt": "作成日時",
+          "actions": "操作",
+          "verified": "確認済み",
+          "unverified": "未確認",
+          "homepage": "ホームページ",
+          "verifyEmail": "メールを確認",
+          "unverifyEmail": "認証解除",
+          "delete": "削除"
+        },
+        "pagination": {
+          "showing": "{{total}}件中 {{start}} - {{end}}件を表示",
+          "previous": "前へ",
+          "next": "次へ"
+        },
+        "deleteConfirm": {
+          "title": "ユーザー削除の確認",
+          "description": "この操作は取り消せず、ユーザーとすべてのデータが永久に削除されます。",
+          "cancel": "キャンセル",
+          "confirm": "削除を確認",
+          "deleting": "削除中..."
+        }
+      },
+      "save": "保存",
+      "saving": "保存中...",
+      "saveSuccess": "保存に成功しました",
+      "saveFailed": "保存に失敗しました：{{error}}"
+    }
+  },
+  "components": {
+    "d3": {
+      "heatmap": {
+        "noData": "ヒートマップデータなし",
+        "note": "ノート",
+        "notes": "ノート",
+        "noNotesOnDate": "この日付のノートはありません",
+        "daysOfWeek": {
+          "Sun": "日",
+          "Mon": "月",
+          "Tue": "火",
+          "Wed": "水",
+          "Thu": "木",
+          "Fri": "金",
+          "Sat": "土"
+        }
+      }
+    },
+    "navBar": {
+      "back": "戻る"
+    },
+    "openKey": {
+      "permissions": "権限",
+      "example": "例",
+      "edit": "編集",
+      "delete": "削除",
+      "deleting": "削除中...",
+      "deleteSuccess": "削除成功",
+      "deleteFailed": "削除失敗",
+      "copySuccess": "コンテンツをクリップボードにコピーしました",
+      "copyFailed": "コンテンツのコピーに失敗しました",
+      "usageCount": "呼び出し回数",
+      "lastUsedAt": "最終使用",
+      "neverUsed": "未使用",
+      "viewLogs": "ログを表示",
+      "usageLogs": "使用ログ",
+      "noLogs": "まだ呼び出し記録がありません",
+      "endpoint": "エンドポイント",
+      "method": "メソッド",
+      "clientIp": "IPアドレス",
+      "statusCode": "ステータス",
+      "responseTime": "応答時間",
+      "loadMore": "さらに読み込む",
+      "editPermissions": "利用権限の編集",
+      "copy": "コピー",
+      "exampleContent": "これはOpenKeyを使用して送信されたノートです。",
+      "exampleTag": "OpenKeyから",
+      "exampleTag2": "タグ2"
+    },
+    "openKeyEditModel": {
+      "selectAll": "すべて選択",
+      "save": "保存",
+      "saving": "保存中...",
+      "saveSuccess": "保存成功",
+      "saveFailed": "保存失敗",
+      "minimumPermission": "少なくとも1つの権限が必要です",
+      "permissions": {
+        "SENDROTE": "Rote を作成",
+        "GETROTE": "Rote を取得",
+        "EDITROTE": "Rote を編集（削除を含む）",
+        "SENDARTICLE": "記事を作成",
+        "ADDREACTION": "リアクションを追加",
+        "DELETEREACTION": "リアクションを削除",
+        "EDITPROFILE": "プロフィールを編集"
+      }
+    },
+    "sidebarSearch": {
+      "placeholder": "ノートを検索..."
+    },
+    "randomRote": {
+      "title": "ランダムレビュー",
+      "publicNoteHint": "これは他のユーザーの公開ノートです。"
+    },
+    "roteInputSimple": {
+      "contentPlaceholder": "Ctrl + ↵ で送信",
+      "pin": "ピン留め",
+      "archive": "アーカイブ",
+      "articleReference": "記事を参照",
+      "send": "送信",
+      "uploadFailed": "添付ファイルのアップロードに失敗しました",
+      "sending": "送信中...",
+      "sendSuccess": "送信成功",
+      "sendFailed": "送信失敗",
+      "publicWarning": "あなたのコンテンツは公開され、誰でも閲覧できます。",
+      "referencedArticles": "参照された記事",
+      "stateOptions": {
+        "public": "公開",
+        "private": "非公開"
+      },
+      "error": {
+        "emptyContent": "コンテンツは空にできません"
+      }
+    },
+    "roteItem": {
+      "details": "詳細",
+      "pinned": "ピン留め",
+      "unpinned": "ピン留め解除",
+      "edit": "編集",
+      "archive": "アーカイブ",
+      "unarchive": "アーカイブ解除",
+      "share": "共有",
+      "delete": "削除",
+      "review": "レビュー",
+      "isPinned": "ピン留め済み",
+      "isPublic": "公開",
+      "isArchived": "アーカイブ済み",
+      "copyLink": "リンクをコピー",
+      "expand": "展開",
+      "subscriptionReminder": "購読リマインダー",
+      "inDevelopment": "開発中",
+      "messages": {
+        "deleting": "削除中...",
+        "deleteSuccess": "削除成功",
+        "deleteFailed": "削除失敗",
+        "editing": "編集中...",
+        "editSuccess": "成功",
+        "editFailed": "編集失敗",
+        "privateNoteCannotShare": "非公開ノートは共有できません",
+        "privateNoteShareDescription": "共有する前にノートを公開に設定する必要があります",
+        "setPublicAndShare": "公開にして共有"
+      },
+      "linkCopied": "リンクをクリップボードにコピーしました"
+    },
+    "roteList": {
+      "empty": "ここには何もありません",
+      "collapsedCount": "{{name}} の他の {{count}} 件のノートを表示",
+      "collapse": "折りたたむ"
+    },
+    "tagMap": {
+      "noTags": "まだタグがありません",
+      "expand": "展開",
+      "expandMore": "もっと見る",
+      "collapse": "折りたたむ"
+    },
+    "tagSelector": {
+      "selectTags": "タグを選択...",
+      "tagsCount": "{{count}}個のタグ",
+      "searchTags": "タグを検索..."
+    },
+    "productHunt": {
+      "findUsOn": "Product Huntで見つける",
+      "scheduledDate": "予定日：{{date}}",
+      "votePrompt": "Product Huntで投票して応援してください！ 🥺"
+    },
+    "verifiedIcon": {
+      "tooltip": "確認済みメールアドレス"
+    }
+  },
+  "article": {
+    "editor": {
+      "title": "記事を作成",
+      "editTitle": "記事を編集",
+      "editorLabel": "エディター",
+      "previewLabel": "プレビュー",
+      "previewPlaceholder": "プレビューがここに表示されます",
+      "contentPlaceholder": "# 記事タイトル",
+      "cancel": "キャンセル",
+      "save": "記事を保存",
+      "update": "記事を更新",
+      "emptyContent": "コンテンツは空にできません",
+      "needTitle": "コンテンツに一級見出し（# タイトル）を追加してください",
+      "createSuccess": "記事を作成しました",
+      "createFailed": "作成に失敗しました",
+      "updateSuccess": "記事を更新しました",
+      "updateFailed": "更新に失敗しました",
+      "uploadingPlaceholder": "{{name}} をアップロード中...",
+      "uploadFailedPlaceholder": "アップロード失敗: {{name}}",
+      "editLabel": "編集",
+      "uploadFailed": "アップロードに失敗しました: {{name}}",
+      "markdownSyntax": "Markdown 構文",
+      "syntaxBoldItalic": "太字と斜体",
+      "syntaxBoldText": "太字",
+      "syntaxItalicText": "斜体",
+      "syntaxHeader": "見出し",
+      "syntaxH1": "1級見出し",
+      "syntaxH2": "2級見出し",
+      "syntaxLinkImage": "リンクと画像",
+      "syntaxLinkText": "テキスト",
+      "syntaxLinkUrl": "リンク",
+      "syntaxImageDesc": "説明",
+      "syntaxImageLink": "画像リンク",
+      "syntaxImageTip": "ヒント：画像を直接貼り付けて自動アップロードをサポート",
+      "syntaxList": "リスト",
+      "syntaxListItem": "項目1",
+      "syntaxQuoteCode": "引用とコードブロック",
+      "syntaxQuote": "引用テキスト",
+      "syntaxCodeBlock": "言語名",
+      "syntaxFullGuide": "詳細な構文ガイド",
+      "wordsCount": "{{count}} 文字",
+      "download": "Markdownをダウンロード"
+    },
+    "actions": {
+      "copyLink": "リンクをコピー",
+      "linkCopied": "リンクをコピーしました",
+      "edit": "記事を編集",
+      "delete": "記事を削除",
+      "deleting": "削除中...",
+      "deleteConfirm": "この記事を削除してもよろしいですか？この操作は取り消せません。",
+      "deleteSuccess": "記事を削除しました",
+      "deleteFailed": "削除に失敗しました"
+    },
+    "selection": {
+      "title": "記事を選択",
+      "createNew": "記事を作成",
+      "createNewDesc": "新しいMarkdown記事を作成",
+      "noArticles": "記事がありません。上のボタンをクリックして作成してください"
+    },
+    "viewer": {
+      "title": "記事プレビュー",
+      "loadFailed": "記事の読み込みに失敗しました",
+      "notFound": "記事コンテンツが見つかりません",
+      "edit": "記事を編集"
+    }
+  },
+  "common": {
+    "timeAgo": {
+      "justNow": "たった今",
+      "secondsAgo": "{{count}}秒前",
+      "minutesAgo": "{{count}}分前",
+      "minutesAgo_plural": "{{count}}分前",
+      "hoursAgo": "{{count}}時間前",
+      "hoursAgo_plural": "{{count}}時間前",
+      "daysAgo": "{{count}}日前",
+      "daysAgo_plural": "{{count}}日前",
+      "weeksAgo": "{{count}}週間前",
+      "weeksAgo_plural": "{{count}}週間前",
+      "monthsAgo": "{{count}}ヶ月前",
+      "monthsAgo_plural": "{{count}}ヶ月前",
+      "yearsAgo": "{{count}}年前",
+      "yearsAgo_plural": "{{count}}年前"
+    }
+  }
+}

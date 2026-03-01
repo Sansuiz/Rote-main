@@ -1,0 +1,83 @@
+import { tabsData } from '@/layout/dashboard';
+import { ArrowLeft } from 'lucide-react';
+import { type ReactNode, useLayoutEffect, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
+import { useLocation, useNavigate } from 'react-router-dom';
+
+interface NavHeaderProps {
+  title?: ReactNode;
+  icon?: ReactNode;
+  children?: ReactNode;
+  onNavClick?: () => void;
+  onBack?: () => void;
+}
+
+export default function NavBar({ title, icon, children, onNavClick, onBack }: NavHeaderProps) {
+  const { t } = useTranslation('translation', {
+    keyPrefix: 'components.navBar',
+  });
+  const location = useLocation();
+  const navigate = useNavigate();
+  const navRef = useRef<HTMLDivElement>(null);
+
+  useLayoutEffect(() => {
+    if (navRef.current) {
+      const height = navRef.current.offsetHeight;
+      document.documentElement.style.setProperty('--nav-height', `${height}px`);
+    }
+  }, []);
+
+  const mainNavPaths = tabsData
+    .flat()
+    .map((tab) => tab.link)
+    .filter(Boolean);
+
+  const isMainNavPage = mainNavPaths.includes(location.pathname);
+
+  function back() {
+    if (onBack) {
+      onBack();
+      return;
+    }
+    const doesAnyHistoryEntryExist = location.key !== 'default';
+    if (doesAnyHistoryEntryExist) {
+      navigate(-1);
+    } else {
+      navigate('/home');
+    }
+  }
+
+  return (
+    <>
+      <div
+        ref={navRef}
+        className={`noScrollBar bg-background/99 sticky top-0 z-10 flex w-full items-center gap-2 overflow-x-scroll pr-4 text-lg font-semibold backdrop-blur-xl duration-300 ${onNavClick && 'cursor-pointer'}`}
+        onClick={onNavClick}
+      >
+        <div className="flex items-center divide-x">
+          {!isMainNavPage && (
+            <div
+              className="hover:text-theme flex cursor-pointer items-center gap-2 p-3 duration-300"
+              onClick={(e) => {
+                e.stopPropagation();
+                back();
+              }}
+            >
+              <ArrowLeft className="size-6" />
+              <div>{t('back')}</div>
+            </div>
+          )}
+
+          {(icon || title) && (
+            <div className="flex items-center gap-2 p-3">
+              {icon}
+              {title}
+            </div>
+          )}
+        </div>
+
+        {children}
+      </div>
+    </>
+  );
+}

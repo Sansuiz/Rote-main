@@ -1,0 +1,43 @@
+.env.production
+.env
+.env.development
+.env.local
+.env.*.local
+node_modules
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+bun-debug.log*
+._*
+data
+.DS_Store
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+bun.lockb
+bun.lock
+.idea
+.vscode
+.cursor
+.cache
+coverage
+logs
+server/dist
+server/scripts/compressed
+server/scripts/uploads
+server/scripts/migration
+web/dist
+web/.vite
+web/public/sitemap.xml
+
+# Serverless Cloud Framework（SCF）本地状态与缓存
+.serverless
+.serverless/**
+
+# 存储配置指南（运行时数据）
+# Garage 存储服务 - 忽略运行时数据和敏感配置
+doc/storage/garage/meta/
+doc/storage/garage/data/
+doc/storage/garage/garage.toml
+# 保留文档和配置模板：README.md, QUICK_START.md, docker-compose.yml, cors-config.json, bucket-policy.json

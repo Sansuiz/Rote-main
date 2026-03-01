@@ -1,0 +1,137 @@
+import { HeadBucketCommand, S3Client } from '@aws-sdk/client-s3';
+import { RequestChecksumCalculation } from '@aws-sdk/middleware-flexible-checksums';
+import type { ConfigTestResult, StorageConfig } from '../types/config';
+
+/**
+ * 配置测试工具类
+ */
+export class ConfigTester {
+  private static normalizeEndpoint(endpoint: string): string {
+    return endpoint.trim().replace(/\/+$/, '');
+  }
+
+  private static extractCosRegion(endpoint: string): string | null {
+    const match = endpoint.match(/cos\.([a-z0-9-]+)\.myqcloud\.com/i);
+    return match ? match[1] : null;
+  }
+
+  /**
+   * 判断是否需要使用路径风格访问
+   * 路径风格是 S3 API 的标准格式，所有 S3 兼容服务都支持
+   */
+  private static shouldUsePathStyle(_endpoint: string): boolean {
+    // COS 新桶默认不支持路径风格访问
+    return !this.extractCosRegion(_endpoint);
+  }
+
+  /**
+   * 测试存储配置（R2/S3）
+   */
+  public static async testStorage(config: StorageConfig): Promise<ConfigTestResult> {
+    try {
+      if (!config.endpoint || !config.bucket || !config.accessKeyId || !config.secretAccessKey) {
+        return {
+          success: false,
+          message: 'Storage configuration is incomplete, please fill in all required fields',
+        };
+      }
+
+      const endpoint = this.normalizeEndpoint(config.endpoint);
+      const bucketName = config.bucket;
+
+      const cosRegion = this.extractCosRegion(endpoint);
+      const resolvedRegion = config.region || cosRegion || 'auto';
+
+      if (cosRegion && config.region && config.region !== cosRegion) {
+        return {
+          success: false,
+          message: `Region mismatch: endpoint region is "${cosRegion}", but config region is "${config.region}"`,
+        };
+      }
+
+      if (cosRegion && resolvedRegion === 'auto') {
+        return {
+          success: false,
+          message: 'COS requires an explicit region (e.g., ap-shanghai). Please set region.',
+        };
+      }
+
+      if (
+        cosRegion &&
+        bucketName &&
+        endpoint.toLowerCase().includes(`${bucketName.toLowerCase()}.cos.${cosRegion}`)
+      ) {
+        return {
+          success: false,
+          message: `COS endpoint should not include bucket. Use "https://cos.${cosRegion}.myqcloud.com"`,
+        };
+      }
+
+      if (cosRegion && !bucketName) {
+        return {
+          success: false,
+          message: 'Bucket is required for COS configuration.',
+        };
+      }
+
+      const s3Client = new S3Client({
+        endpoint,
+        region: resolvedRegion,
+        credentials: {
+          accessKeyId: config.accessKeyId,
+          secretAccessKey: config.secretAccessKey,
+        },
+        // 使用路径风格访问，兼容所有 S3 兼容服务（AWS S3、R2、Garage、MinIO 等）
+        // 路径风格是 S3 API 的标准格式，所有服务商都支持
+        forcePathStyle: this.shouldUsePathStyle(endpoint),
+        // 仅在明确要求时计算校验和，避免与 Garage 等 S3 兼容服务的校验和验证冲突
+        // Garage 可能不支持或不正确支持 AWS SDK 自动添加的校验和
+        requestChecksumCalculation: RequestChecksumCalculation.WHEN_REQUIRED,
+      });
+
+      // 测试存储桶访问权限
+      await s3Client.send(new HeadBucketCommand({ Bucket: bucketName }));
+
+      return {
+        success: true,
+        message: 'Storage configuration test successful',
+        details: {
+          endpoint: config.endpoint,
+          bucket: config.bucket,
+          urlPrefix: config.urlPrefix,
+        },
+      };
+    } catch (error: any) {
+      return {
+        success: false,
+        message: `Storage configuration test failed: ${error.message}`,
+        details: error,
+      };
+    }
+  }
+
+  /**
+   * 测试数据库连接
+   */
+  public static async testDatabase(): Promise<ConfigTestResult> {
+    try {
+      const { db, closeDatabase } = await import('./drizzle');
+      const { sql } = await import('drizzle-orm');
+
+      // 执行简单查询测试连接
+      await db.execute(sql`SELECT 1`);
+      await closeDatabase();
+
+      return {
+        success: true,
+        message: 'Database connection test successful',
+      };
+    } catch (error: any) {
+      return {
+        success: false,
+        message: `Database connection test failed: ${error.message}`,
+        details: error,
+      };
+    }
+  }
+}

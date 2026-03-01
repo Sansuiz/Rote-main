@@ -1,0 +1,35 @@
+{
+  "short_name": "Rote",
+  "name": "Rote - A Note App.",
+  "description": "Rote - 一个看起来不太一样的个人笔记库🤔",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/icon-180.png", "sizes": "180x180", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/ico.svg", "sizes": "any", "type": "image/svg+xml" }
+  ],
+  "protocol_handlers": [
+    {
+      "protocol": "web+rote",
+      "url": "/?type=%s"
+    },
+    {
+      "protocol": "web+note",
+      "url": "/?type=%s"
+    }
+  ],
+  "start_url": "/?source=pwa",
+  "id": "/",
+  "scope": "/",
+  "categories": ["productivity", "utilities"],
+  "orientation": "portrait",
+  "lang": "zh-CN",
+  "shortcuts": [
+    { "name": "新建笔记", "url": "/rote?new=1" },
+    { "name": "搜索", "url": "/explore" }
+  ],
+  "display_override": ["fullscreen"],
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff"
+}

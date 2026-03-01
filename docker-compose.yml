@@ -1,0 +1,77 @@
+# Docker Compose configuration using pre-built images from Docker Hub
+# Usage: docker-compose up -d
+#
+# To use a specific version, set IMAGE_TAG environment variable:
+# IMAGE_TAG=v1.0.0 docker-compose up -d
+#
+# Available tags:
+# - latest: Latest stable release (supports multi-platform: amd64, arm64)
+# - release: Latest stable release (same as latest)
+# - develop: Latest from develop branch (supports multi-platform: amd64, arm64)
+# - main: Latest from main branch
+# - v1.0.0: Specific version (if released)
+#
+# ⚠️ IMPORTANT ⚠️
+# Don't forget to set VITE_API_BASE
+# Example: VITE_API_BASE=http://<your-ip-address>:18000 or VITE_API_BASE=http://<your-domain>
+# Note: If you use a reverse proxy, VITE_API_BASE should be your backend address after the reverse proxy
+
+services:
+  rote-backend:
+    image: rabithua/rote-backend:${IMAGE_TAG:-latest}
+    pull_policy: always
+    container_name: rote-backend
+    environment:
+      # 基础配置 - 必需
+      - POSTGRESQL_URL=postgresql://rote:${POSTGRES_PASSWORD:-rote_password_123}@rote-postgres:5432/rote
+    ports:
+      - "18000:3000"
+    depends_on:
+      rote-postgres:
+        condition: service_healthy
+    restart: unless-stopped
+    # Startup command: wait for the database to be ready, then run migrations and start the backend service
+    # Uses programmatic migrations (does not rely on drizzle-kit CLI, suitable for production)
+    command:
+      [
+        "sh",
+        "-c",
+        "sleep 15 && bun run dist/scripts/runMigrations.js && bun run dist/server.js",
+      ]
+
+  rote-frontend:
+    image: rabithua/rote-frontend:${IMAGE_TAG:-latest}
+    pull_policy: always
+    container_name: rote-frontend
+    ports:
+      - "18001:80"
+    depends_on:
+      - rote-backend
+    environment:
+      - VITE_API_BASE=${VITE_API_BASE:-http://<your-ip-address>:18000}
+    restart: unless-stopped
+
+  rote-postgres:
+    image: postgres:17
+    container_name: rote-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: rote
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-rote_password_123}
+      POSTGRES_DB: rote
+    volumes:
+      - rote-postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U rote -d rote"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+      start_period: 30s
+
+volumes:
+  rote-postgres-data:
+
+networks:
+  default:
+    name: rote-network
+    driver: bridge

@@ -1,0 +1,144 @@
+/**
+ * Download files from R2
+ */
+
+import { GetObjectCommand, ListObjectsV2Command, S3Client } from '@aws-sdk/client-s3';
+import { RequestChecksumCalculation } from '@aws-sdk/middleware-flexible-checksums';
+import { eq } from 'drizzle-orm';
+import { createWriteStream, mkdirSync } from 'fs';
+import { dirname, join } from 'path';
+import { settings } from '../drizzle/schema';
+import db, { closeDatabase } from '../utils/drizzle';
+
+// 从数据库获取配置
+async function getStorageConfig() {
+  try {
+    const [setting] = await db
+      .select({ config: settings.config })
+      .from(settings)
+      .where(eq(settings.group, 'storage'))
+      .limit(1);
+
+    if (!setting) {
+      throw new Error('Storage configuration not found. Please run the initialization first.');
+    }
+
+    return setting.config as any;
+  } finally {
+    await closeDatabase();
+  }
+}
+
+// 初始化配置
+let s3Client: S3Client;
+let bucketName: string;
+
+async function initializeConfig() {
+  const config = await getStorageConfig();
+
+  console.log('Storage Config:');
+  console.log('Endpoint:', config.endpoint);
+  console.log('Access Key ID:', config.accessKeyId ? '***' : 'Not set');
+  console.log('Secret Access Key:', config.secretAccessKey ? '***' : 'Not set');
+  console.log('Bucket:', config.bucket);
+  console.log('Region:', config.region || 'auto');
+
+  s3Client = new S3Client({
+    region: config.region || 'auto',
+    endpoint: config.endpoint,
+    credentials: {
+      accessKeyId: config.accessKeyId,
+      secretAccessKey: config.secretAccessKey,
+    },
+    // 使用路径风格访问，兼容所有 S3 兼容服务（AWS S3、R2、Garage、MinIO 等）
+    // 路径风格是 S3 API 的标准格式，所有服务商都支持
+    forcePathStyle: true,
+    // 仅在明确要求时计算校验和，避免与 Garage 等 S3 兼容服务的校验和验证冲突
+    // Garage 可能不支持或不正确支持 AWS SDK 自动添加的校验和
+    requestChecksumCalculation: RequestChecksumCalculation.WHEN_REQUIRED,
+  });
+
+  bucketName = config.bucket;
+}
+const folderPrefix = 'uploads/'; // 替换为你想下载的文件夹名称
+const localDownloadPath = './'; // 本地保存下载文件的根路径
+
+function ensureDirectoryExistence(filePath: string) {
+  const dir = dirname(filePath);
+  if (dir !== '.') {
+    mkdirSync(dir, { recursive: true });
+  }
+}
+
+async function downloadFile(key: string): Promise<void> {
+  const command = new GetObjectCommand({
+    Bucket: bucketName,
+    Key: key,
+  });
+
+  try {
+    const response = await s3Client.send(command);
+    const filePath = join(localDownloadPath, key);
+    ensureDirectoryExistence(filePath);
+
+    return new Promise<void>((resolve, reject) => {
+      if (!response.Body) {
+        reject(new Error('Response body is undefined'));
+        return;
+      }
+      const writeStream = createWriteStream(filePath);
+      if ('pipe' in response.Body) {
+        response.Body.pipe(writeStream);
+      } else {
+        reject(new Error('Response body is not a readable stream'));
+        return;
+      }
+      writeStream.on('finish', resolve);
+      writeStream.on('error', reject);
+    });
+  } catch (err) {
+    console.error(`Error downloading file ${key}:`, err);
+  }
+}
+
+async function downloadAllFiles(): Promise<void> {
+  try {
+    // 初始化配置
+    await initializeConfig();
+
+    let continuationToken: string | undefined = undefined;
+
+    do {
+      const command: ListObjectsV2Command = new ListObjectsV2Command({
+        Bucket: bucketName,
+        Prefix: folderPrefix,
+        ContinuationToken: continuationToken,
+      });
+
+      try {
+        const response = await s3Client.send(command);
+
+        if (response.Contents) {
+          for (const object of response.Contents) {
+            if (object.Key && object.Key !== folderPrefix) {
+              // 跳过文件夹本身
+              console.log(`Downloading: ${object.Key}`);
+              await downloadFile(object.Key);
+            }
+          }
+        }
+
+        continuationToken = response.NextContinuationToken;
+      } catch (err) {
+        console.error('Error listing objects:', err);
+        break;
+      }
+    } while (continuationToken);
+
+    console.log('All files downloaded successfully!');
+  } catch (err) {
+    console.error('Error initializing configuration:', err);
+  }
+}
+
+downloadAllFiles();

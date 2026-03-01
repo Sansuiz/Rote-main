@@ -1,0 +1,904 @@
+{
+  "pages": {
+    "landing": {
+      "poem": "采菊东篱下，悠然见南山",
+      "headingBefore": "一个看起来不太一样的",
+      "headingAfter": " 🤔",
+      "linksItems": ["登录", "", "GitHub"],
+      "dashboard": "仪表盘",
+      "star": "Stars",
+      "fork": "Forks",
+      "issues": "Issues",
+      "watch": "Watch",
+      "lastPushTime": "上次推送时间：",
+      "coreFeatures": {
+        "title": "核心特性",
+        "subtitle": "为了更优雅的笔记体验和更少的心智负担",
+        "tagline": "Core features",
+        "features": {
+          "restraint": {
+            "title": "保持克制",
+            "description": "一切为了优雅的笔记体验，和克制的互动体验"
+          },
+          "simple": {
+            "title": "低心智负担",
+            "description": "更少的压力和更简单直观的记录体验乃至部署体验"
+          },
+          "openApi": {
+            "title": "开放接口",
+            "description": "开放 API 接口，支持在任意的场景记录或者获取数据"
+          },
+          "freedom": {
+            "title": "无拘无束",
+            "description": "完全掌控你的数据，自由导出数据"
+          }
+        }
+      },
+      "construction": {
+        "title": "持续施工中...",
+        "subtitle": "作为一个长期项目，Rote 仍在不断完善中",
+        "tagline": "STILL UNDER CONSTRUCTION"
+      },
+      "exploreMore": {
+        "title": "探索更多",
+        "subtitle": "这里有几个按钮以供玩耍",
+        "tagline": "EXPlORE MORE"
+      },
+      "redirectingToSetup": {
+        "error": "检测到后端错误，正在跳转到设置页面",
+        "notInitialized": "系统未初始化，正在跳转到设置页面"
+      },
+      "typewriterTexts": ["个人笔记库", "碎碎念本子", "私人朋友圈", "个人频道", "微型博客"],
+      "subtitle": "开放API，记录的姿势不止一种🤩，支持Self-Hosted，对自己的数据掌握主动权，来去自由，没有数据绑架🙅🏻",
+      "iosAppTooltip": {
+        "title": "想要加入 iOS 测试版吗？",
+        "earlyAccess": "抢先测试"
+      },
+      "andMore": {
+        "tagline": "And More",
+        "title": "除了这些，还有...",
+        "subtitle": "优雅的架构设计，部署姿势和很棒的客户端体验",
+        "features": {
+          "selfHosted": {
+            "title": "自托管部署",
+            "description": "使用 Docker 或者 Dokploy 一键部署"
+          },
+          "tools": {
+            "title": "小工具们",
+            "description": "随机回顾，标签云，oauth，RSS，EveDayOneCat..."
+          },
+          "architecture": {
+            "title": "分离架构",
+            "description": "前后端采用分离的架构设计，按需部署你需要的服务"
+          },
+          "iosClient": {
+            "title": "iOS 客户端",
+            "description": "更优雅的 App 客户端"
+          }
+        }
+      },
+      "quickLinks": {
+        "selfHosted": "自托管部署指南",
+        "github": "Github",
+        "explore": "Explore Rote",
+        "rabithua": "Rabithua"
+      }
+    },
+    "mine": {
+      "leftNavBar": {
+        "home": "首页",
+        "explore": "探索",
+        "archived": "归档",
+        "profile": "我的",
+        "experiment": "实验",
+        "admin": "管理",
+        "fold": "收起",
+        "login": "登录",
+        "logout": "登出"
+      },
+      "messages": {
+        "loggingOut": "退出登录中...",
+        "logoutSuccess": "已退出登录",
+        "logoutFailed": "退出登录失败",
+        "logoutConfirmTitle": "确认登出",
+        "logoutConfirmDescription": "确定要退出登录吗？",
+        "logoutConfirm": "确认登出",
+        "cancel": "取消"
+      }
+    },
+    "error": {
+      "pageNotFound": "页面未找到或发生错误",
+      "pageNotFoundDesc": "抱歉，我们无法找到您要访问的页面"
+    },
+    "login": {
+      "authorize": {
+        "title": "授权登录",
+        "message": "你将授权 Rote Web App 以 {{username}} 的身份登录 Rote iOS App",
+        "button": "授权登录"
+      },
+      "messages": {
+        "loggingIn": "登录中...",
+        "loginSuccess": "登录成功",
+        "backendDown": "后端服务不可用",
+        "registering": "注册中...",
+        "registerSuccess": "注册成功",
+        "oauthLoginSuccess": "GitHub 登录成功",
+        "oauthCancelled": "已取消 GitHub 授权",
+        "appleLoginSuccess": "Apple 登录成功",
+        "appleCancelled": "已取消 Apple 授权"
+      },
+      "oauth": {
+        "or": "或"
+      },
+      "fields": {
+        "username": "用户名",
+        "usernameOrEmail": "用户名或邮箱",
+        "usernameOrEmailPlaceholder": "username or email",
+        "password": "密码",
+        "email": "邮箱",
+        "nickname": "昵称"
+      },
+      "buttons": {
+        "login": "登录",
+        "register": "注册",
+        "loginWithGitHub": "使用 GitHub 登录",
+        "loginWithApple": "使用 Apple 登录"
+      },
+      "nav": {
+        "explore": "探索",
+        "home": "首页"
+      },
+      "error": {
+        "backendIssue": "后端服务出现问题",
+        "dockerDeployment": "使用Docker部署，后端容器可能需要几分钟构建，请稍后刷新页面"
+      },
+      "usernameRequired": "请输入用户名",
+      "usernameOrEmailRequired": "请输入用户名或邮箱",
+      "usernameMaxLength": "用户名不能超过20个字符",
+      "usernameFormat": "用户名只能包含字母、数字、下划线和连字符",
+      "usernameConflict": "此用户名与系统路由冲突",
+      "passwordRequired": "请输入密码",
+      "passwordMin": "密码长度至少6位",
+      "passwordMaxLength": "密码最长128位",
+      "emailRequired": "请输入邮箱",
+      "emailMaxLength": "邮箱最长30位",
+      "emailFormat": "请输入正确的邮箱格式",
+      "nicknameRequired": "请输入昵称",
+      "nicknameMaxLength": "昵称最长20位"
+    },
+    "home": {
+      "statistics": "统计 / Static"
+    },
+    "profile": {
+      "title": "个人资料",
+      "editProfile": "编辑资料",
+      "noDescription": "这个人很懒，还没留下任何简介...",
+      "registerTime": "注册时间：",
+      "openKeyDescription": "OpenKey 可以轻易的使用权限指定的功能，合理分配权限，避免 OpenKey 泄露带来不必要的麻烦。",
+      "noOpenKey": "暂时还没有OpenKey，生成一个？",
+      "addOpenKey": "生成一个OpenKey",
+      "email": "邮箱",
+      "username": "用户名",
+      "nickname": "昵称",
+      "description": "简介",
+      "enterNickname": "输入你的昵称...",
+      "enterDescription": "输入你的简介...",
+      "editing": "修改中...",
+      "save": "保存",
+      "cropAvatar": "剪裁头像",
+      "uploading": "上传中...",
+      "done": "完成",
+      "creating": "创建中...",
+      "createSuccess": "创建成功",
+      "createFailed": "创建失败",
+      "uploadSuccess": "上传成功",
+      "uploadFailed": "上传失败",
+      "heicNotSupported": "不支持 HEIC 格式的图片，请选择其他格式（如 JPEG、PNG 等）",
+      "editSuccess": "修改成功",
+      "editFailed": "修改失败",
+      "sideBarTitle": "除了这些...还有",
+      "settings": {
+        "themeLabel": "颜色模式",
+        "themeDescription": "选择深色、浅色或跟随系统。",
+        "themeSystem": "跟随系统",
+        "themeLight": "浅色模式",
+        "themeDark": "深色模式",
+        "languageLabel": "界面语言",
+        "languageDescription": "选择界面显示语言。",
+        "title": "额外设置",
+        "allowExploreLabel": "允许我的公开笔记出现在探索页",
+        "allowExploreDescription": "关闭后，你的公开笔记仍然可以通过链接访问，但不会在「探索」页面中被推荐展示。",
+        "save": "保存设置",
+        "saving": "保存中…",
+        "saveSuccess": "设置已保存",
+        "saveFailed": "保存失败：{{error}}",
+        "oauth": {
+          "title": "账户关联",
+          "description": "关联第三方账户后，您可以使用多种方式登录",
+          "bindSuccess": "账户绑定成功",
+          "bindFailed": "绑定失败：{{error}}",
+          "unbindSuccess": "账户已解绑",
+          "unbindFailed": "解绑失败：{{error}}",
+          "mergeSuccess": "账户绑定成功，账户数据已合并",
+          "mergeFailed": "账户合并失败：{{error}}",
+          "mergeDialog": {
+            "title": "合并账户确认",
+            "description": "检测到该账户已被其他账户使用。合并后，该账户的所有数据（笔记、附件等）将迁移到当前账户，原账户将被删除。",
+            "existingAccount": "已存在的账户",
+            "currentAccount": "当前账户",
+            "warning": "警告：此操作不可撤销，请确认这是您的账户。",
+            "cancel": "取消",
+            "confirm": "确认合并",
+            "merging": "合并中…"
+          },
+          "github": {
+            "notBound": "未绑定",
+            "bind": "绑定 GitHub",
+            "unbind": "解绑 GitHub",
+            "binding": "绑定中…",
+            "unbinding": "解绑中…"
+          },
+          "apple": {
+            "notBound": "未绑定",
+            "bind": "绑定 Apple",
+            "unbind": "解绑 Apple",
+            "binding": "绑定中…",
+            "unbinding": "解绑中…"
+          }
+        },
+        "deleteAccount": {
+          "title": "删除账户",
+          "description": "删除账户将永久删除您的所有数据，包括笔记、附件等，此操作不可恢复。",
+          "button": "删除账户",
+          "confirmTitle": "确认删除账户",
+          "warning": "此操作将永久删除您的账户和所有相关数据，包括所有笔记、附件等。此操作不可恢复，请谨慎操作。",
+          "passwordLabel": "请输入您的密码以确认删除",
+          "passwordPlaceholder": "密码",
+          "passwordRequired": "请输入密码",
+          "cancel": "取消",
+          "confirm": "确认删除",
+          "deleting": "删除中…",
+          "success": "账户已删除",
+          "failed": "删除失败：{{error}}"
+        }
+      }
+    },
+    "rote": {
+      "sideBarTitle": "相关信息"
+    },
+    "article": {
+      "title": "文章详情",
+      "sideBarTitle": "相关信息",
+      "relatedNote": "相关笔记"
+    },
+    "user": {
+      "noDescription": "这个人很懒，还没留下任何简介...",
+      "registerTime": "注册时间：",
+      "publicNotes": "已公开的笔记 / Public Note",
+      "rssSubscribe": "RSS 订阅",
+      "sideBarTitle": "除了这些...还有",
+      "helmet": {
+        "loading": "加载中...",
+        "defaultDesc": "rote.ink"
+      }
+    },
+    "filter": {
+      "title": "筛选 / Filter",
+      "includeTags": "包含标签：",
+      "allTags": "所有标签：",
+      "none": "无",
+      "data": "数据统计",
+      "note": "笔记",
+      "attachment": "附件"
+    },
+    "explore": {
+      "title": "探索 / Explore",
+      "sideBarTitle": "探索✨",
+      "star": "Stars",
+      "fork": "Forks",
+      "issues": "Issues",
+      "watch": "Watch",
+      "githubOpenSource": "Rote 已在 Github 开源，欢迎 Star!",
+      "lastPushTime": "上次推送时间："
+    },
+    "experiment": {
+      "title": "实验室 / Experiment",
+      "description": "实验性质小功能，有可能会让rote变得更好用🤩",
+      "exportData": {
+        "title": "数据导出",
+        "description": "导出完整的数据，以便在其他地方使用，json 格式。",
+        "noteCount": "笔记数量",
+        "attachmentCount": "附件数量",
+        "downloadJson": "下载 Json 格式数据",
+        "downloading": "下载中..."
+      },
+      "importData": {
+        "title": "数据导入",
+        "description": "导入来自其他笔记平台的数据。",
+        "notSupported": "导入数据功能施工中",
+        "notesFound": "笔记数量",
+        "attachmentsFound": "附件数量",
+        "dialogTitle": "使用说明",
+        "dialogDescription": "请上传符合以下 JSON 格式的文件。",
+        "dialogExample": "JSON 示例",
+        "dialogNote": "系统将根据 Note ID 进行匹配，如果 ID 已存在且属于您，将更新笔记内容；如果 ID 不存在，将创建新笔记。同时也会处理嵌套的 attachments 数据。",
+        "convertToolHint": "如果您想迁移其他平台的数据，可以使用我们的数据转换工具：",
+        "convertToolLinkName": "Rerote - Rote 数据转换工具",
+        "fileParsed": "已解析 {{count}} 条笔记",
+        "invalidFormat": "文件格式无效，请上传有效的 JSON 文件",
+        "parseError": "JSON 文件解析失败",
+        "importSuccess": "导入成功！共处理: {{count}}, 新增: {{created}}, 更新: {{updated}}",
+        "importFailed": "导入失败",
+        "clickToUpload": "点击上传文件",
+        "cancel": "取消",
+        "importing": "导入中...",
+        "confirmImport": "确认导入"
+      },
+      "serviceWorker": {
+        "title": "ServiceWoker通知",
+        "description": "ServiceWorker可以使用某些高级功能，比如后台通知等。",
+        "status": "状态：",
+        "serviceId": "服务标识:",
+        "notificationTest": "通知测试",
+        "sending": "发送中...",
+        "sendSuccess": "发送成功！",
+        "sendFailed": "发送失败",
+        "example": "使用示例：",
+        "notSupported": "当前浏览器不支持 ServiceWorker",
+        "swNotActive": "ServiceWorker 未激活"
+      },
+      "subscriptions": {
+        "title": "已订阅的通知端点",
+        "testAllEndpoints": "测试所有端点",
+        "testNotification": "测试通知",
+        "deleteSubscription": "删除订阅",
+        "statusActive": "正常",
+        "statusInactive": "不可用",
+        "testNotificationContent": {
+          "title": "自在废物",
+          "body": "这是我的博客。"
+        },
+        "messages": {
+          "testingAllEndpoints": "正在测试所有端点...",
+          "testCompleted": "测试完成！成功: {{success}}, 失败: {{failed}}",
+          "testFailed": "测试失败: {{error}}",
+          "deletingSubscription": "正在删除订阅...",
+          "deleteSuccess": "订阅删除成功",
+          "deleteFailed": "删除失败: {{error}}",
+          "testNotificationSent": "测试通知已发送",
+          "confirmDelete": "确定要删除这个订阅吗？",
+          "clearInvalid": "清理无效端点",
+          "clearingInvalid": "清理中...",
+          "clearSuccess": "清理成功！共清理了 {{count}} 个无效端点",
+          "clearFailed": "清理失败: {{error}}",
+          "clearConfirm": "测试发现 {{count}} 个无效端点，是否清理？"
+        },
+        "noSubscriptions": "没有订阅的通知端点"
+      }
+    },
+    "archived": {
+      "title": "归档 / Archived",
+      "statistics": "统计 / Static"
+    },
+    "setupPage": {
+      "statusChecking": "检查系统状态中...",
+      "error": {
+        "title": "系统状态检查失败",
+        "description": "无法连接到后端服务，请检查后端服务是否正常运行。",
+        "backendHint": "如果使用 Docker 部署，后端容器可能需要几分钟构建，请稍后刷新页面。",
+        "retry": "重试"
+      }
+    },
+    "setupWizard": {
+      "title": "Rote 初始化向导",
+      "subtitle": "欢迎使用 Rote！请按照以下步骤完成系统配置",
+      "steps": {
+        "basic": {
+          "title": "基础配置",
+          "description": "设置网站基本信息"
+        },
+        "storage": {
+          "title": "存储配置",
+          "description": "配置 S3 云存储（可选）"
+        },
+        "admin": {
+          "title": "管理员账户",
+          "description": "创建管理员账户"
+        }
+      },
+      "labels": {
+        "siteName": "网站名称",
+        "siteDescription": "网站描述",
+        "frontendUrl": "前端 URL",
+        "storageType": "存储类型",
+        "cos": "腾讯云 COS",
+        "customEndpoint": "自定义 S3 (Garage/MinIO)",
+        "accountId": "R2 Account ID",
+        "endpoint": "S3 Endpoint",
+        "cosEndpoint": "COS Endpoint",
+        "accessKey": "Access Key",
+        "secretKey": "Secret Key",
+        "bucket": "存储桶名称",
+        "region": "区域",
+        "urlPrefix": "URL 前缀",
+        "username": "用户名",
+        "email": "邮箱",
+        "password": "密码",
+        "nickname": "昵称"
+      },
+      "placeholders": {
+        "siteName": "请输入网站名称",
+        "siteDescription": "请输入网站描述",
+        "frontendUrl": "https://your-domain.com",
+        "accountId": "your-r2-account-id",
+        "endpoint": "http://localhost:3900",
+        "cosEndpoint": "https://cos.ap-shanghai.myqcloud.com",
+        "accessKey": "请输入 S3 Access Key",
+        "secretKey": "请输入 S3 Secret Key",
+        "bucket": "请输入存储桶名称",
+        "region": "auto",
+        "cosRegion": "ap-shanghai",
+        "urlPrefix": "https://bucket.your-domain.com",
+        "adminUsername": "请输入管理员用户名",
+        "adminEmail": "请输入管理员邮箱",
+        "adminPassword": "请输入管理员密码",
+        "adminNickname": "请输入管理员昵称"
+      },
+      "descriptions": {
+        "frontendUrl": "前端URL用于标识您的前端访问地址，将用于生成RSS Feed中的链接。建议填写完整的URL（如：https://your-domain.com）。",
+        "storageType": "选择 Cloudflare R2、腾讯云 COS 或自定义 S3 兼容存储（Garage、MinIO、AWS S3 等）",
+        "endpoint": "S3 API 端点地址（例如 Garage 的 http://localhost:3900）",
+        "cosEndpoint": "COS API 端点地址（例如 https://cos.ap-shanghai.myqcloud.com，不要包含桶名）",
+        "region": "S3 区域，默认为 'auto'",
+        "cosRegion": "COS 区域（必填，例如 ap-shanghai）",
+        "urlPrefix": "用于访问上传文件的公共 URL 前缀（必填），这个是实际上储存资源访问的域名",
+        "s3Optional": "S3 存储配置是可选的。您可以跳过此步骤，稍后在系统设置中配置。如果跳过，系统将无法上传附件，但其他功能可以正常使用。"
+      },
+      "validation": {
+        "siteNameRequired": "网站名称不能为空",
+        "frontendUrlRequired": "前端URL不能为空",
+        "frontendUrlInvalid": "请输入有效的URL（以http://或https://开头）",
+        "accountIdRequired": "R2 Account ID不能为空",
+        "endpointRequired": "S3 Endpoint不能为空",
+        "endpointInvalid": "请输入有效的 Endpoint URL（以http://或https://开头）",
+        "cosEndpointInvalid": "COS Endpoint 需为 https://cos.{region}.myqcloud.com",
+        "accessKeyRequired": "Access Key不能为空",
+        "secretKeyRequired": "Secret Key不能为空",
+        "bucketRequired": "存储桶名称不能为空",
+        "regionRequired": "区域不能为空",
+        "urlPrefixRequired": "URL 前缀不能为空",
+        "urlPrefixInvalid": "请输入有效的URL前缀（以http://或https://开头）",
+        "usernameRequired": "用户名不能为空",
+        "usernameReserved": "该用户名已被保留，不能使用。请选择其他用户名。",
+        "emailRequired": "邮箱不能为空",
+        "emailInvalid": "请输入有效的邮箱地址",
+        "passwordRequired": "密码不能为空",
+        "passwordMin": "密码长度至少6位",
+        "passwordMax": "密码长度不能超过128位"
+      },
+      "buttons": {
+        "prev": "上一步",
+        "next": "下一步",
+        "finish": "完成配置",
+        "saving": "保存中...",
+        "testConnection": "测试 S3 连接",
+        "skipS3": "跳过 S3 配置",
+        "testing": "测试连接中..."
+      },
+      "toasts": {
+        "systemInitialized": "系统已经初始化，将跳转到系统设置页面",
+        "initSuccess": "系统初始化成功！",
+        "initFailed": "系统初始化失败，请检查配置",
+        "testSuccess": "S3 连接测试成功！",
+        "testFailed": "连接测试失败: {{error}}",
+        "seeConsole": "详细信息请查看控制台。",
+        "pleaseFillS3": "请先填写完整的 S3 配置信息"
+      }
+    },
+    "admin": {
+      "title": "管理员仪表盘",
+      "accessDenied": "访问被拒绝",
+      "adminOnly": "此页面仅限管理员访问",
+      "tabs": {
+        "site": "站点设置",
+        "storage": "存储设置",
+        "ui": "系统设置",
+        "security": "安全设置",
+        "oauth": "OAuth 登录",
+        "users": "用户管理"
+      },
+      "site": {
+        "title": "站点配置",
+        "description": "配置网站的基本信息",
+        "name": "网站名称",
+        "descriptionLabel": "网站描述",
+        "frontendUrl": "前端 URL",
+        "frontendUrlDescription": "前端访问地址，用于生成 RSS Feed 中的笔记链接",
+        "icpRecord": "ICP 备案号",
+        "icpRecordDescription": "网站备案号，如：京ICP备12345678号",
+        "announcement": {
+          "title": "站点公告",
+          "description": "在探索页面顶部显示的站点公告",
+          "content": "公告内容",
+          "contentPlaceholder": "输入公告内容",
+          "link": "公告链接",
+          "linkPlaceholder": "可选，点击公告跳转的链接"
+        }
+      },
+      "storage": {
+        "title": "存储配置",
+        "description": "配置 S3 云存储设置",
+        "storageType": "存储类型",
+        "storageTypeDescription": "选择 Cloudflare R2、腾讯云 COS 或自定义 S3 兼容存储（Garage、MinIO、AWS S3 等）",
+        "cos": "腾讯云 COS",
+        "customEndpoint": "自定义 S3 (Garage/MinIO)",
+        "accountId": "R2 Account ID",
+        "accountIdPlaceholder": "your-r2-account-id",
+        "endpoint": "S3 Endpoint",
+        "endpointPlaceholder": "http://localhost:3900",
+        "endpointDescription": "S3 API 端点地址（例如 Garage 的 http://localhost:3900）",
+        "cosEndpoint": "COS Endpoint",
+        "cosEndpointPlaceholder": "https://cos.ap-shanghai.myqcloud.com",
+        "cosEndpointDescription": "COS API 端点地址（例如 https://cos.ap-shanghai.myqcloud.com，不要包含桶名）",
+        "bucket": "Bucket",
+        "bucketPlaceholder": "bucket-name",
+        "accessKeyId": "Access Key ID",
+        "accessKeyIdPlaceholder": "Access Key ID",
+        "secretAccessKey": "Secret Access Key",
+        "secretAccessKeyPlaceholder": "Secret Access Key",
+        "region": "Region",
+        "regionPlaceholder": "auto",
+        "regionDescription": "S3 区域，默认为 'auto'",
+        "cosRegionPlaceholder": "ap-shanghai",
+        "cosRegionDescription": "COS 区域（必填，例如 ap-shanghai）",
+        "urlPrefix": "URL 前缀",
+        "urlPrefixPlaceholder": "https://your-cdn-domain.com",
+        "urlPrefixDescription": "用于访问上传文件的公共 URL 前缀（必填），这个是实际上储存资源访问的域名",
+        "testConnection": "测试连接",
+        "testing": "测试中...",
+        "testSuccess": "存储连接测试成功！",
+        "testFailed": "连接测试失败: {{error}}",
+        "seeConsole": "详细信息请查看控制台。",
+        "fillAllRequired": "请填写所有必填字段",
+        "required": "必填",
+        "save": "保存",
+        "saving": "保存中...",
+        "saveSuccess": "保存成功",
+        "saveFailed": "保存失败: {{error}}"
+      },
+      "ui": {
+        "title": "界面配置",
+        "description": "配置用户界面相关设置",
+        "allowRegistration": "允许注册",
+        "allowRegistrationDesc": "是否允许新用户注册",
+        "allowUploadFile": "允许上传文件",
+        "allowUploadFileDesc": "是否允许用户上传附件",
+        "defaultUserRole": "默认用户角色",
+        "defaultUserRolePlaceholder": "选择默认角色",
+        "defaultUserRoleDescription": "新注册用户的默认角色。只能选择普通用户或版主，管理员角色需要手动分配。",
+        "roles": {
+          "user": "普通用户",
+          "moderator": "版主"
+        },
+        "apiRateLimit": "API 速率限制",
+        "apiRateLimitDescription": "每个用户或 IP 地址每秒允许的最大请求数。用于防止 API 滥用。最小值为 10，默认值为 100 请求/秒。"
+      },
+      "security": {
+        "title": "安全配置",
+        "description": "配置与安全相关的策略，例如邮箱验证要求等。",
+        "requireVerifiedEmailForExplore": "仅允许已验证邮箱的用户出现在探索页",
+        "requireVerifiedEmailForExploreDesc": "开启后，只有邮箱已验证的用户，其公开笔记才会被推荐到「探索」页面；已公开的笔记仍可通过链接访问。"
+      },
+      "oauth": {
+        "title": "OAuth 登录配置",
+        "description": "配置第三方 OAuth 提供商登录设置，允许用户通过 GitHub 等平台登录。",
+        "enabled": "启用 OAuth 登录",
+        "enabledDesc": "允许用户通过第三方 OAuth 提供商（如 GitHub）登录",
+        "disabledHint": "OAuth 功能已禁用。配置提供商后，请启用 OAuth 登录功能以使其生效。",
+        "providers": {
+          "enabled": "启用 {{provider}} OAuth",
+          "enabledDesc": "允许用户通过 {{provider}} 账户登录"
+        },
+        "github": {
+          "enabled": "启用 GitHub OAuth",
+          "enabledDesc": "允许用户通过 GitHub 账户登录",
+          "clientId": "Client ID",
+          "clientSecret": "Client Secret",
+          "callbackUrl": "回调 URL",
+          "callbackUrlDesc": "注意：此 URL 为后端 URL。 GitHub OAuth App 中配置的回调 URL，通常为：https://yourdomain.com/v2/api/auth/oauth/github/callback。"
+        },
+        "apple": {
+          "enabled": "启用 Apple OAuth",
+          "enabledDesc": "允许用户通过 Apple 账户登录",
+          "clientId": "Service ID (Client ID)",
+          "clientIdPlaceholder": "Apple Service ID (Client ID)",
+          "teamId": "Team ID",
+          "teamIdPlaceholder": "Apple Developer Team ID",
+          "keyId": "Key ID",
+          "keyIdPlaceholder": "Apple Key ID",
+          "privateKey": "私钥",
+          "privateKeyPlaceholder": "Apple Private Key (PEM format)",
+          "callbackUrl": "回调 URL",
+          "callbackUrlDesc": "注意：此 URL 为后端 URL。Apple Developer 中配置的回调 URL，通常为：https://yourdomain.com/v2/api/auth/oauth/apple/callback。"
+        }
+      },
+      "users": {
+        "title": "用户管理",
+        "description": "管理系统中的所有用户",
+        "searchPlaceholder": "搜索用户名、邮箱或昵称",
+        "noUsers": "暂无用户",
+        "noUsersFound": "未找到匹配的用户",
+        "verifyEmailSuccess": "邮箱验证成功",
+        "verifyEmailFailed": "邮箱验证失败: {{error}}",
+        "unverifyEmailSuccess": "取消邮箱验证成功",
+        "unverifyEmailFailed": "取消邮箱验证失败: {{error}}",
+        "deleteSuccess": "用户删除成功",
+        "deleteFailed": "用户删除失败: {{error}}",
+        "table": {
+          "username": "用户名",
+          "avatar": "头像",
+          "email": "邮箱",
+          "nickname": "昵称",
+          "role": "角色",
+          "emailVerified": "邮箱验证",
+          "createdAt": "创建时间",
+          "actions": "操作",
+          "verified": "已验证",
+          "unverified": "未验证",
+          "homepage": "主页",
+          "verifyEmail": "验证邮箱",
+          "unverifyEmail": "取消验证",
+          "delete": "删除"
+        },
+        "pagination": {
+          "showing": "显示第 {{start}} - {{end}} 条，共 {{total}} 条",
+          "previous": "上一页",
+          "next": "下一页"
+        },
+        "deleteConfirm": {
+          "title": "确认删除用户",
+          "description": "此操作无法撤销，将永久删除该用户及其所有数据。",
+          "cancel": "取消",
+          "confirm": "确认删除",
+          "deleting": "删除中..."
+        }
+      },
+      "save": "保存",
+      "saving": "保存中...",
+      "saveSuccess": "保存成功",
+      "saveFailed": "保存失败: {{error}}"
+    }
+  },
+  "components": {
+    "d3": {
+      "heatmap": {
+        "noData": "热力图暂无数据",
+        "note": "笔记",
+        "notes": "笔记",
+        "noNotesOnDate": "该日期暂无笔记",
+        "daysOfWeek": {
+          "Sun": "周日",
+          "Mon": "周一",
+          "Tue": "周二",
+          "Wed": "周三",
+          "Thu": "周四",
+          "Fri": "周五",
+          "Sat": "周六"
+        }
+      }
+    },
+    "navBar": {
+      "back": "返回"
+    },
+    "openKey": {
+      "permissions": "权限",
+      "example": "示例",
+      "edit": "编辑",
+      "delete": "删除",
+      "deleting": "删除中...",
+      "deleteSuccess": "删除成功",
+      "deleteFailed": "删除失败",
+      "copySuccess": "内容已复制到剪贴板",
+      "copyFailed": "无法复制内容到剪贴板",
+      "usageCount": "调用次数",
+      "lastUsedAt": "最后使用",
+      "neverUsed": "从未使用",
+      "viewLogs": "查看日志",
+      "usageLogs": "使用日志",
+      "noLogs": "暂无调用记录",
+      "endpoint": "端点",
+      "method": "方法",
+      "clientIp": "IP地址",
+      "statusCode": "状态码",
+      "responseTime": "耗时",
+      "loadMore": "加载更多",
+      "editPermissions": "编辑权限",
+      "copy": "复制",
+      "exampleContent": "这是一条使用OpenKey发送的笔记。",
+      "exampleTag": "来自OpenKey",
+      "exampleTag2": "标签二"
+    },
+    "openKeyEditModel": {
+      "selectAll": "全选",
+      "save": "保存",
+      "saving": "保存中...",
+      "saveSuccess": "保存成功",
+      "saveFailed": "保存失败",
+      "minimumPermission": "至少需要一个权限",
+      "permissions": {
+        "SENDROTE": "创建Rote",
+        "GETROTE": "获取Rote",
+        "EDITROTE": "编辑Rote（包括删除）",
+        "SENDARTICLE": "创建文章",
+        "ADDREACTION": "添加反应",
+        "DELETEREACTION": "删除反应",
+        "EDITPROFILE": "编辑用户资料"
+      }
+    },
+    "sidebarSearch": {
+      "placeholder": "搜索笔记..."
+    },
+    "randomRote": {
+      "title": "随机回顾",
+      "publicNoteHint": "此笔记为用户公开笔记。"
+    },
+    "roteInputSimple": {
+      "contentPlaceholder": "Ctrl + ↵ 发送",
+      "pin": "置顶",
+      "archive": "归档",
+      "articleReference": "引用文章",
+      "send": "发送",
+      "uploadFailed": "附件上传失败",
+      "sending": "发送中...",
+      "sendSuccess": "发送成功",
+      "sendFailed": "发送失败",
+      "publicWarning": "你的内容将会被公开，任何人都可以查看。",
+      "referencedArticles": "引用的文章",
+      "stateOptions": {
+        "public": "公开",
+        "private": "私密"
+      },
+      "error": {
+        "emptyContent": "内容不能为空"
+      }
+    },
+    "roteItem": {
+      "details": "详情",
+      "pinned": "置顶",
+      "unpinned": "取消置顶",
+      "edit": "编辑",
+      "archive": "归档",
+      "unarchive": "取消归档",
+      "share": "分享",
+      "delete": "删除",
+      "review": "回顾",
+      "isPinned": "已置顶",
+      "isPublic": "公开",
+      "isArchived": "已归档",
+      "copyLink": "复制链接",
+      "expand": "展开",
+      "subscriptionReminder": "订阅提醒",
+      "inDevelopment": "开发中",
+      "messages": {
+        "deleting": "删除中...",
+        "deleteSuccess": "删除成功",
+        "deleteFailed": "删除失败",
+        "editing": "编辑中...",
+        "editSuccess": "成功",
+        "editFailed": "编辑失败",
+        "privateNoteCannotShare": "私密笔记无法分享",
+        "privateNoteShareDescription": "需要将笔记设置为公开状态才能分享给他人",
+        "setPublicAndShare": "设为公开并分享"
+      },
+      "linkCopied": "链接已复制到剪贴板"
+    },
+    "roteList": {
+      "empty": "还没有发布任何内容",
+      "collapsedCount": "展开 {{name}} 的另外 {{count}} 条笔记",
+      "collapse": "收起"
+    },
+    "tagMap": {
+      "noTags": "还没有标签",
+      "expand": "展开",
+      "expandMore": "展开更多",
+      "collapse": "收起"
+    },
+    "tagSelector": {
+      "selectTags": "选择标签...",
+      "tagsCount": "{{count}} 个标签",
+      "searchTags": "搜索标签..."
+    },
+    "productHunt": {
+      "findUsOn": "在 Product Hunt 上找到我们",
+      "scheduledDate": "预定发布时间：{{date}}",
+      "votePrompt": "来一票吧，球球啦 🥺！"
+    },
+    "verifiedIcon": {
+      "tooltip": "已验证邮箱"
+    }
+  },
+  "article": {
+    "editor": {
+      "title": "创建文章",
+      "editTitle": "编辑文章",
+      "editorLabel": "编辑器",
+      "previewLabel": "预览",
+      "previewPlaceholder": "预览将在此显示",
+      "contentPlaceholder": "# 文章标题",
+      "cancel": "取消",
+      "save": "保存文章",
+      "update": "更新文章",
+      "emptyContent": "内容不能为空",
+      "needTitle": "请在内容中添加一级标题（# 标题）",
+      "createSuccess": "文章已创建",
+      "createFailed": "创建失败",
+      "updateSuccess": "文章已更新",
+      "updateFailed": "更新失败",
+      "uploadingPlaceholder": "正在上传 {{name}}...",
+      "uploadFailedPlaceholder": "上传失败: {{name}}",
+      "editLabel": "修改",
+      "uploadFailed": "上传失败：{{name}}",
+      "markdownSyntax": "Markdown 语法",
+      "syntaxBoldItalic": "加粗和斜体",
+      "syntaxBoldText": "加粗",
+      "syntaxItalicText": "斜体",
+      "syntaxHeader": "标题",
+      "syntaxH1": "一级标题",
+      "syntaxH2": "二级标题",
+      "syntaxLinkImage": "链接和图片",
+      "syntaxLinkText": "文本",
+      "syntaxLinkUrl": "链接",
+      "syntaxImageDesc": "描述",
+      "syntaxImageLink": "图片链接",
+      "syntaxImageTip": "提示：支持在输入框直接粘贴图片自动上传",
+      "syntaxList": "列表",
+      "syntaxListItem": "项目一",
+      "syntaxQuoteCode": "引用和代码块",
+      "syntaxQuote": "引用文字",
+      "syntaxCodeBlock": "语言名",
+      "syntaxFullGuide": "完整语法指南",
+      "wordsCount": "{{count}} 字",
+      "download": "下载 Markdown"
+    },
+    "actions": {
+      "copyLink": "复制链接",
+      "linkCopied": "链接已复制",
+      "edit": "编辑文章",
+      "delete": "删除文章",
+      "deleting": "删除中...",
+      "deleteConfirm": "确定要删除这篇文章吗？此操作不可恢复。",
+      "deleteSuccess": "文章已删除",
+      "deleteFailed": "删除失败"
+    },
+    "selection": {
+      "title": "选择文章",
+      "createNew": "创建文章",
+      "createNewDesc": "创建一篇新的Markdown文章",
+      "noArticles": "暂无文章，点击上方按钮新建"
+    },
+    "viewer": {
+      "title": "文章预览",
+      "loadFailed": "加载文章失败",
+      "notFound": "未找到文章内容",
+      "edit": "编辑文章"
+    }
+  },
+  "common": {
+    "timeAgo": {
+      "justNow": "刚刚",
+      "secondsAgo": "{{count}}秒前",
+      "minutesAgo": "{{count}}分钟前",
+      "minutesAgo_plural": "{{count}}分钟前",
+      "hoursAgo": "{{count}}小时前",
+      "hoursAgo_plural": "{{count}}小时前",
+      "daysAgo": "{{count}}天前",
+      "daysAgo_plural": "{{count}}天前",
+      "weeksAgo": "{{count}}周前",
+      "weeksAgo_plural": "{{count}}周前",
+      "monthsAgo": "{{count}}个月前",
+      "monthsAgo_plural": "{{count}}个月前",
+      "yearsAgo": "{{count}}年前",
+      "yearsAgo_plural": "{{count}}年前"
+    }
+  }
+}

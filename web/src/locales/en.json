@@ -1,0 +1,910 @@
+{
+  "pages": {
+    "landing": {
+      "poem": "",
+      "headingBefore": "A note repository like",
+      "headingAfter": " 🤔",
+      "linksItems": ["Login", "", "GitHub"],
+      "dashboard": "Dashboard",
+      "star": "Stars",
+      "fork": "Forks",
+      "issues": "Issues",
+      "watch": "Watch",
+      "lastPushTime": "Last push time: ",
+      "coreFeatures": {
+        "title": "Core Features",
+        "subtitle": "For a more elegant note-taking experience and less mental burden",
+        "tagline": "Core features",
+        "features": {
+          "restraint": {
+            "title": "Stay Restrained",
+            "description": "Everything for an elegant note-taking experience"
+          },
+          "simple": {
+            "title": "Simple yet Powerful",
+            "description": "All features are limited to the Web, PWA for better experience"
+          },
+          "openApi": {
+            "title": "Open Interface",
+            "description": "Open API interface, supports recording or getting data in any scenario"
+          },
+          "freedom": {
+            "title": "Unbounded Freedom",
+            "description": "Complete control over your data, free to export data"
+          }
+        }
+      },
+      "construction": {
+        "title": "Still Under Construction...",
+        "subtitle": "As a long-term project, Rote is still being improved",
+        "tagline": "STILL UNDER CONSTRUCTION"
+      },
+      "exploreMore": {
+        "title": "Explore More",
+        "subtitle": "Here are a few buttons to play with",
+        "tagline": "EXPlORE MORE"
+      },
+      "redirectingToSetup": {
+        "error": "Backend error detected, redirecting to setup page",
+        "notInitialized": "System not initialized, redirecting to setup page"
+      },
+      "typewriterTexts": [
+        "Personal Note Repository",
+        "Thoughts Notebook",
+        "Private Twitter",
+        "Personal Channel",
+        "Micro Blog"
+      ],
+      "subtitle": "Open API, more than one way to record🤩, supports Self-Hosted, take control of your own data, come and go freely, no data hostage🙅🏻",
+      "iosAppTooltip": {
+        "title": "Want to join the iOS beta?",
+        "earlyAccess": "Early Access"
+      },
+      "andMore": {
+        "tagline": "And More",
+        "title": "Besides these, there are also...",
+        "subtitle": "Elegant architecture design, deployment options and great client experience",
+        "features": {
+          "selfHosted": {
+            "title": "Self-Hosted Deployment",
+            "description": "One-click deployment with Docker or Dokploy"
+          },
+          "tools": {
+            "title": "Little Tools",
+            "description": "Random review, tag cloud, OAuth, RSS, EveDayOneCat..."
+          },
+          "architecture": {
+            "title": "Separated Architecture",
+            "description": "Frontend and backend are separated, deploy only what you need"
+          },
+          "iosClient": {
+            "title": "iOS Client",
+            "description": "More elegant App client"
+          }
+        }
+      },
+      "quickLinks": {
+        "selfHosted": "Self-Hosted Guide",
+        "github": "Github",
+        "explore": "Explore Rote",
+        "rabithua": "Rabithua"
+      }
+    },
+    "mine": {
+      "leftNavBar": {
+        "home": "Home",
+        "explore": "Explore",
+        "archived": "Archive",
+        "profile": "Profile",
+        "experiment": "Experiment",
+        "admin": "Admin",
+        "fold": "Collapse",
+        "login": "Login",
+        "logout": "Logout"
+      },
+      "messages": {
+        "loggingOut": "Logging out...",
+        "logoutSuccess": "Logout successful",
+        "logoutFailed": "Logout failed",
+        "logoutConfirmTitle": "Confirm Logout",
+        "logoutConfirmDescription": "Are you sure you want to logout?",
+        "logoutConfirm": "Confirm Logout",
+        "cancel": "Cancel"
+      }
+    },
+    "error": {
+      "pageNotFound": "Page not found or an error occurred",
+      "pageNotFoundDesc": "Sorry, we couldn't find the page you were looking for"
+    },
+    "login": {
+      "authorize": {
+        "title": "Authorize Login",
+        "message": "You are about to authorize Rote Web App to sign in to Rote iOS App as {{username}}",
+        "button": "Authorize Login"
+      },
+      "messages": {
+        "loggingIn": "Logging in...",
+        "loginSuccess": "Login successful",
+        "backendDown": "Backend service is unavailable",
+        "registering": "Registering...",
+        "registerSuccess": "Registration successful",
+        "oauthLoginSuccess": "GitHub login successful",
+        "oauthCancelled": "GitHub authorization cancelled",
+        "appleLoginSuccess": "Apple login successful",
+        "appleCancelled": "Apple authorization cancelled"
+      },
+      "oauth": {
+        "or": "OR"
+      },
+      "fields": {
+        "username": "Username",
+        "usernameOrEmail": "Username or Email",
+        "usernameOrEmailPlaceholder": "username or email",
+        "password": "Password",
+        "email": "Email",
+        "nickname": "Nickname"
+      },
+      "buttons": {
+        "login": "Login",
+        "register": "Register",
+        "loginWithGitHub": "Login with GitHub",
+        "loginWithApple": "Sign in with Apple"
+      },
+      "nav": {
+        "explore": "Explore",
+        "home": "Home"
+      },
+      "error": {
+        "backendIssue": "Backend service issue",
+        "dockerDeployment": "Using Docker deployment, backend container may take a few minutes to build. Please refresh the page later."
+      },
+      "usernameRequired": "Username is required",
+      "usernameOrEmailRequired": "Username or email is required",
+      "usernameMaxLength": "Username cannot exceed 20 characters",
+      "usernameFormat": "Username can only contain letters, numbers, underscores and hyphens",
+      "usernameConflict": "This username conflicts with system routes",
+      "passwordRequired": "Password is required",
+      "passwordMin": "Password must be at least 6 characters",
+      "passwordMaxLength": "Password cannot exceed 128 characters",
+      "emailRequired": "Email is required",
+      "emailMaxLength": "Email cannot exceed 30 characters",
+      "emailFormat": "Invalid email format",
+      "nicknameRequired": "Nickname is required",
+      "nicknameMaxLength": "Nickname cannot exceed 20 characters"
+    },
+    "home": {
+      "statistics": "Statistics"
+    },
+    "profile": {
+      "title": "Profile",
+      "editProfile": "Edit Profile",
+      "noDescription": "This person is lazy and hasn't left any description yet...",
+      "registerTime": "Register Time:",
+      "openKeyDescription": "OpenKey allows easy access to permission-specific features. Properly allocate permissions to avoid unnecessary troubles from OpenKey leakage.",
+      "noOpenKey": "No OpenKey yet, generate one?",
+      "addOpenKey": "Generate an OpenKey",
+      "email": "Email",
+      "username": "Username",
+      "nickname": "Nickname",
+      "description": "Description",
+      "enterNickname": "Enter your nickname...",
+      "enterDescription": "Enter your description...",
+      "editing": "Editing...",
+      "save": "Save",
+      "cropAvatar": "Crop Avatar",
+      "uploading": "Uploading...",
+      "done": "Done",
+      "creating": "Creating...",
+      "createSuccess": "Created successfully",
+      "createFailed": "Creation failed",
+      "uploadSuccess": "Upload successful",
+      "uploadFailed": "Upload failed",
+      "heicNotSupported": "HEIC format is not supported. Please select another format (such as JPEG, PNG, etc.)",
+      "editSuccess": "Edit successful",
+      "editFailed": "Edit failed",
+      "sideBarTitle": "Besides... there are also",
+      "settings": {
+        "themeLabel": "Theme Mode",
+        "themeDescription": "Choose dark, light, or follow system.",
+        "themeSystem": "System",
+        "themeLight": "Light",
+        "themeDark": "Dark",
+        "languageLabel": "Language",
+        "languageDescription": "Select the interface language.",
+        "title": "Additional Settings",
+        "allowExploreLabel": "Allow my public notes to appear in Explore",
+        "allowExploreDescription": "When turned off, your public notes are still accessible via direct links, but will not be recommended in the Explore page.",
+        "save": "Save Settings",
+        "saving": "Saving…",
+        "saveSuccess": "Settings saved",
+        "saveFailed": "Failed to save: {{error}}",
+        "oauth": {
+          "title": "Account Linking",
+          "description": "Link third-party accounts to enable multiple login methods",
+          "bindSuccess": "Account bound successfully",
+          "bindFailed": "Binding failed: {{error}}",
+          "unbindSuccess": "Account unbound",
+          "unbindFailed": "Unbinding failed: {{error}}",
+          "mergeSuccess": "Account bound successfully, account data merged",
+          "mergeFailed": "Account merge failed: {{error}}",
+          "mergeDialog": {
+            "title": "Confirm Account Merge",
+            "description": "This account is already linked to another account. After merging, all data (notes, attachments, etc.) from that account will be migrated to your current account, and the original account will be deleted.",
+            "existingAccount": "Existing Account",
+            "currentAccount": "Current Account",
+            "warning": "Warning: This operation cannot be undone. Please confirm this is your account.",
+            "cancel": "Cancel",
+            "confirm": "Confirm Merge",
+            "merging": "Merging…"
+          },
+          "github": {
+            "notBound": "Not Bound",
+            "bind": "Bind GitHub",
+            "unbind": "Unbind GitHub",
+            "binding": "Binding…",
+            "unbinding": "Unbinding…"
+          },
+          "apple": {
+            "notBound": "Not Bound",
+            "bind": "Bind Apple",
+            "unbind": "Unbind Apple",
+            "binding": "Binding…",
+            "unbinding": "Unbinding…"
+          }
+        },
+        "deleteAccount": {
+          "title": "Delete Account",
+          "description": "Deleting your account will permanently delete all your data, including notes, attachments, etc. This action cannot be undone.",
+          "button": "Delete Account",
+          "confirmTitle": "Confirm Account Deletion",
+          "warning": "This action will permanently delete your account and all related data, including all notes, attachments, etc. This action cannot be undone. Please proceed with caution.",
+          "passwordLabel": "Please enter your password to confirm deletion",
+          "passwordPlaceholder": "Password",
+          "passwordRequired": "Password is required",
+          "cancel": "Cancel",
+          "confirm": "Confirm Deletion",
+          "deleting": "Deleting…",
+          "success": "Account deleted successfully",
+          "failed": "Failed to delete account: {{error}}"
+        }
+      }
+    },
+    "rote": {
+      "sideBarTitle": "Relative Information"
+    },
+    "article": {
+      "title": "Article Details",
+      "sideBarTitle": "Relative Information",
+      "relatedNote": "Related Note"
+    },
+    "user": {
+      "noDescription": "This person is lazy and hasn't left any description yet...",
+      "registerTime": "Register Time: ",
+      "publicNotes": "Public Notes",
+      "rssSubscribe": "RSS Feed",
+      "sideBarTitle": "Besides... there are also",
+      "helmet": {
+        "loading": "loading...",
+        "defaultDesc": "rote.ink"
+      }
+    },
+    "filter": {
+      "title": "Filter",
+      "includeTags": "Including Tags:",
+      "allTags": "All Tags:",
+      "none": "NONE",
+      "data": "Data Statistics",
+      "note": "Note",
+      "attachment": "Attachment"
+    },
+    "explore": {
+      "title": "Explore",
+      "sideBarTitle": "Explore✨",
+      "star": "Stars",
+      "fork": "Forks",
+      "issues": "Issues",
+      "watch": "Watch",
+      "githubOpenSource": "Rote is open source on Github, welcome to Star!",
+      "lastPushTime": "Last push time: "
+    },
+    "experiment": {
+      "title": "Experiment",
+      "description": "Experimental features that might make rote better to use 🤩",
+      "exportData": {
+        "title": "Export Data",
+        "description": "Export complete data in JSON format for use elsewhere.",
+        "noteCount": "Notes Count",
+        "attachmentCount": "Attachments Count",
+        "downloadJson": "Download JSON Data",
+        "downloading": "Downloading..."
+      },
+      "importData": {
+        "title": "Data Import",
+        "description": "Import data from other note platforms.",
+        "notSupported": "Currently not supported.",
+        "notesFound": "Notes Found",
+        "attachmentsFound": "Attachments Found",
+        "dialogTitle": "Usage Instructions",
+        "dialogDescription": "Please upload a file matching the following JSON format.",
+        "dialogExample": "JSON Example",
+        "dialogNote": "The system will match based on Note ID. If the ID exists and belongs to you, the note content will be updated; if the ID does not exist, a new note will be created. Nested attachment data will also be processed.",
+        "convertToolHint": "If you want to migrate data from other platforms, you can use our data conversion tool:",
+        "convertToolLinkName": "Rerote - Rote Data Conversion Tool",
+        "fileParsed": "Parsed {{count}} notes",
+        "invalidFormat": "Invalid file format. Please upload a valid JSON file.",
+        "parseError": "Failed to parse JSON file",
+        "importSuccess": "Import successful! Processed: {{count}}, Created: {{created}}, Updated: {{updated}}",
+        "importFailed": "Import failed",
+        "clickToUpload": "Click to upload file",
+        "cancel": "Cancel",
+        "importing": "Importing...",
+        "confirmImport": "Confirm Import"
+      },
+      "serviceWorker": {
+        "title": "ServiceWorker Notification",
+        "description": "ServiceWorker enables advanced features like background notifications.",
+        "status": "Status:",
+        "serviceId": "Service ID:",
+        "notificationTest": "Test Notification",
+        "sending": "Sending...",
+        "sendSuccess": "Sent successfully!",
+        "sendFailed": "Send failed",
+        "example": "Usage Example:",
+        "notSupported": "Current browser does not support ServiceWorker",
+        "swNotActive": "ServiceWorker is not active, please refresh the page"
+      },
+      "subscriptions": {
+        "title": "Subscribed Notification Endpoints",
+        "testAllEndpoints": "Test All Endpoints",
+        "testNotification": "Test Notification",
+        "deleteSubscription": "Delete Subscription",
+        "statusActive": "Active",
+        "statusInactive": "Inactive",
+        "testNotificationContent": {
+          "title": "Rote Blog",
+          "body": "This is my blog."
+        },
+        "messages": {
+          "testingAllEndpoints": "Testing all endpoints...",
+          "testCompleted": "Test completed! Success: {{success}}, Failed: {{failed}}",
+          "testFailed": "Test failed: {{error}}",
+          "deletingSubscription": "Deleting subscription...",
+          "deleteSuccess": "Subscription deleted successfully",
+          "deleteFailed": "Delete failed: {{error}}",
+          "testNotificationSent": "Test notification sent",
+          "confirmDelete": "Are you sure you want to delete this subscription?",
+          "clearInvalid": "Clear Invalid Endpoints",
+          "clearingInvalid": "Clearing...",
+          "clearSuccess": "Cleared successfully! {{count}} invalid endpoints removed.",
+          "clearFailed": "Clear failed: {{error}}",
+          "clearConfirm": "Found {{count}} invalid endpoints. Clear them?"
+        },
+        "noSubscriptions": "No subscribed notification endpoints"
+      }
+    },
+    "archived": {
+      "title": "Archive",
+      "statistics": "Statistics"
+    },
+    "setupPage": {
+      "statusChecking": "Checking system status...",
+      "error": {
+        "title": "System Status Check Failed",
+        "description": "Unable to connect to the backend service. Please check if the backend service is running properly.",
+        "backendHint": "If using Docker deployment, the backend container may take a few minutes to build. Please refresh the page later.",
+        "retry": "Retry"
+      }
+    },
+    "setupWizard": {
+      "title": "Rote Setup Wizard",
+      "subtitle": "Welcome to Rote! Follow the steps to complete the setup",
+      "steps": {
+        "basic": {
+          "title": "Basic Settings",
+          "description": "Set site basics"
+        },
+        "storage": {
+          "title": "Storage Settings",
+          "description": "Configure S3 storage (optional)"
+        },
+        "admin": {
+          "title": "Admin Account",
+          "description": "Create admin account"
+        }
+      },
+      "labels": {
+        "siteName": "Site Name",
+        "siteDescription": "Site Description",
+        "frontendUrl": "Frontend URL",
+        "storageType": "Storage Type",
+        "cos": "Tencent COS",
+        "customEndpoint": "Custom S3 (Garage/MinIO)",
+        "accountId": "R2 Account ID",
+        "endpoint": "S3 Endpoint",
+        "cosEndpoint": "COS Endpoint",
+        "accessKey": "Access Key",
+        "secretKey": "Secret Key",
+        "bucket": "Bucket Name",
+        "region": "Region",
+        "urlPrefix": "URL Prefix",
+        "username": "Username",
+        "email": "Email",
+        "password": "Password",
+        "nickname": "Nickname"
+      },
+      "placeholders": {
+        "siteName": "Enter site name",
+        "siteDescription": "Enter site description",
+        "frontendUrl": "https://your-domain.com",
+        "accountId": "your-r2-account-id",
+        "endpoint": "http://localhost:3900",
+        "cosEndpoint": "https://cos.ap-shanghai.myqcloud.com",
+        "accessKey": "Enter S3 Access Key",
+        "secretKey": "Enter S3 Secret Key",
+        "bucket": "Enter bucket name",
+        "region": "auto",
+        "cosRegion": "ap-shanghai",
+        "urlPrefix": "https://bucket.your-domain.com",
+        "adminUsername": "Enter admin username",
+        "adminEmail": "Enter admin email",
+        "adminPassword": "Enter admin password",
+        "adminNickname": "Enter admin nickname"
+      },
+      "descriptions": {
+        "frontendUrl": "Frontend URL is used to identify your frontend access address and will be used to generate links in RSS feeds. Please enter the complete URL (e.g., https://your-domain.com).",
+        "storageType": "Choose Cloudflare R2, Tencent COS, or custom S3-compatible storage (Garage, MinIO, AWS S3, etc.)",
+        "endpoint": "S3 API endpoint URL (e.g., http://localhost:3900 for Garage)",
+        "cosEndpoint": "COS API endpoint URL (e.g., https://cos.ap-shanghai.myqcloud.com, no bucket)",
+        "region": "S3 region, defaults to 'auto'",
+        "cosRegion": "COS region (required, e.g., ap-shanghai)",
+        "urlPrefix": "Public URL prefix for accessing uploaded files (required), this is the domain name used to access the actually stored resources.",
+        "s3Optional": "S3 storage configuration is optional. You can skip this step and configure it later in system settings. If skipped, the system will not be able to upload attachments, but other features will work normally."
+      },
+      "validation": {
+        "siteNameRequired": "Site name is required",
+        "frontendUrlRequired": "Frontend URL is required",
+        "frontendUrlInvalid": "Please enter a valid URL (starts with http:// or https://)",
+        "accountIdRequired": "R2 Account ID is required",
+        "endpointRequired": "S3 Endpoint is required",
+        "endpointInvalid": "Please enter a valid endpoint URL (starts with http:// or https://)",
+        "cosEndpointInvalid": "COS Endpoint must be https://cos.{region}.myqcloud.com",
+        "accessKeyRequired": "Access Key is required",
+        "secretKeyRequired": "Secret Key is required",
+        "bucketRequired": "Bucket name is required",
+        "regionRequired": "Region is required",
+        "urlPrefixRequired": "URL prefix is required",
+        "urlPrefixInvalid": "Please enter a valid URL prefix (starts with http:// or https://)",
+        "usernameRequired": "Username is required",
+        "usernameReserved": "This username is reserved and cannot be used. Please choose another username.",
+        "emailRequired": "Email is required",
+        "emailInvalid": "Please enter a valid email address",
+        "passwordRequired": "Password is required",
+        "passwordMin": "Password length must be at least 6",
+        "passwordMax": "Password cannot exceed 128 characters"
+      },
+      "buttons": {
+        "prev": "Previous",
+        "next": "Next",
+        "finish": "Finish Setup",
+        "saving": "Saving...",
+        "testConnection": "Test S3 Connection",
+        "skipS3": "Skip S3 Configuration",
+        "testing": "Testing connection..."
+      },
+      "toasts": {
+        "systemInitialized": "System has been initialized, redirecting to settings page",
+        "initSuccess": "System initialized successfully!",
+        "initFailed": "System initialization failed, please check your configuration",
+        "testSuccess": "S3 connection test succeeded!",
+        "testFailed": "Connection test failed: {{error}}",
+        "seeConsole": "See console for details.",
+        "pleaseFillS3": "Please fill in all S3 configuration fields first"
+      }
+    },
+    "admin": {
+      "title": "Admin Dashboard",
+      "accessDenied": "Access Denied",
+      "adminOnly": "This page is only accessible to administrators",
+      "tabs": {
+        "site": "Site Settings",
+        "storage": "Storage Settings",
+        "ui": "System Settings",
+        "security": "Security Settings",
+        "oauth": "OAuth Login",
+        "users": "User Management"
+      },
+      "site": {
+        "title": "Site Configuration",
+        "description": "Configure basic site information",
+        "name": "Site Name",
+        "descriptionLabel": "Site Description",
+        "frontendUrl": "Frontend URL",
+        "frontendUrlDescription": "Frontend access URL, used to generate note links in RSS feeds",
+        "icpRecord": "ICP Record Number",
+        "icpRecordDescription": "Website ICP record number, e.g., 京ICP备12345678号",
+        "announcement": {
+          "title": "Site Announcement",
+          "description": "Announcement displayed at the top of the Explore page.",
+          "content": "Announcement Content",
+          "contentPlaceholder": "Enter announcement content",
+          "link": "Announcement Link",
+          "linkPlaceholder": "Optional, link to jump to when clicking the announcement"
+        }
+      },
+      "storage": {
+        "title": "Storage Configuration",
+        "description": "Configure S3 cloud storage settings",
+        "storageType": "Storage Type",
+        "storageTypeDescription": "Choose Cloudflare R2, Tencent COS, or custom S3-compatible storage (Garage, MinIO, AWS S3, etc.)",
+        "cos": "Tencent COS",
+        "customEndpoint": "Custom S3 (Garage/MinIO)",
+        "accountId": "R2 Account ID",
+        "accountIdPlaceholder": "your-r2-account-id",
+        "endpoint": "S3 Endpoint",
+        "endpointPlaceholder": "http://localhost:3900",
+        "endpointDescription": "S3 API endpoint address (e.g., http://localhost:3900 for Garage)",
+        "cosEndpoint": "COS Endpoint",
+        "cosEndpointPlaceholder": "https://cos.ap-shanghai.myqcloud.com",
+        "cosEndpointDescription": "COS API endpoint address (e.g., https://cos.ap-shanghai.myqcloud.com, no bucket)",
+        "bucket": "Bucket",
+        "bucketPlaceholder": "bucket-name",
+        "accessKeyId": "Access Key ID",
+        "accessKeyIdPlaceholder": "Access Key ID",
+        "secretAccessKey": "Secret Access Key",
+        "secretAccessKeyPlaceholder": "Secret Access Key",
+        "region": "Region",
+        "regionPlaceholder": "auto",
+        "regionDescription": "S3 region, defaults to 'auto'",
+        "cosRegionPlaceholder": "ap-shanghai",
+        "cosRegionDescription": "COS region (required, e.g., ap-shanghai)",
+        "urlPrefix": "URL Prefix",
+        "urlPrefixPlaceholder": "https://your-cdn-domain.com",
+        "urlPrefixDescription": "Public URL prefix for accessing uploaded files (required), this is the domain name used to access the actually stored resources.",
+        "testConnection": "Test Connection",
+        "testing": "Testing...",
+        "testSuccess": "Storage connection test successful!",
+        "testFailed": "Connection test failed: {{error}}",
+        "seeConsole": "See console for details.",
+        "fillAllRequired": "Please fill in all required fields",
+        "required": "Required",
+        "save": "Save",
+        "saving": "Saving...",
+        "saveSuccess": "Saved successfully",
+        "saveFailed": "Save failed: {{error}}"
+      },
+      "ui": {
+        "title": "UI Configuration",
+        "description": "Configure user interface settings",
+        "allowRegistration": "Allow Registration",
+        "allowRegistrationDesc": "Whether to allow new user registration",
+        "allowUploadFile": "Allow File Upload",
+        "allowUploadFileDesc": "Whether to allow users to upload attachments",
+        "defaultUserRole": "Default User Role",
+        "defaultUserRolePlaceholder": "Select default role",
+        "defaultUserRoleDescription": "Default role for newly registered users. Only user or moderator can be selected. Admin roles must be assigned manually.",
+        "roles": {
+          "user": "User",
+          "moderator": "Moderator"
+        },
+        "apiRateLimit": "API Rate Limit",
+        "apiRateLimitDescription": "Maximum number of requests per second allowed per user or IP address. Used to prevent API abuse. Minimum is 10, default is 100 requests/second."
+      },
+      "security": {
+        "title": "Security Configuration",
+        "description": "Configure security-related policies, such as email verification requirements.",
+        "requireVerifiedEmailForExplore": "Only allow users with verified email to appear in Explore",
+        "requireVerifiedEmailForExploreDesc": "When enabled, only users with verified email will have their public notes recommended in the Explore page; existing public notes remain accessible via direct links."
+      },
+      "oauth": {
+        "title": "OAuth Login Configuration",
+        "description": "Configure third-party OAuth provider login settings, allowing users to login via platforms like GitHub.",
+        "enabled": "Enable OAuth Login",
+        "enabledDesc": "Allow users to login via third-party OAuth providers (e.g., GitHub)",
+        "disabledHint": "OAuth is currently disabled. After configuring providers, enable OAuth login for it to take effect.",
+        "providers": {
+          "enabled": "Enable {{provider}} OAuth",
+          "enabledDesc": "Allow users to login with {{provider}} account"
+        },
+        "github": {
+          "enabled": "Enable GitHub OAuth",
+          "enabledDesc": "Allow users to login with GitHub account",
+          "clientId": "Client ID",
+          "clientSecret": "Client Secret",
+          "callbackUrl": "Callback URL",
+          "callbackUrlDesc": "Note: This URL is the backend URL. Callback URL configured in GitHub OAuth App, typically: https://yourdomain.com/v2/api/auth/oauth/github/callback. "
+        },
+        "apple": {
+          "enabled": "Enable Apple OAuth",
+          "enabledDesc": "Allow users to login with Apple account",
+          "clientId": "Service ID (Client ID)",
+          "clientIdPlaceholder": "Apple Service ID (Client ID)",
+          "teamId": "Team ID",
+          "teamIdPlaceholder": "Apple Developer Team ID",
+          "keyId": "Key ID",
+          "keyIdPlaceholder": "Apple Key ID",
+          "privateKey": "Private Key",
+          "privateKeyPlaceholder": "Apple Private Key (PEM format)",
+          "callbackUrl": "Callback URL",
+          "callbackUrlDesc": "Note: This URL is the backend URL. Callback URL configured in Apple Developer, typically: https://yourdomain.com/v2/api/auth/oauth/apple/callback."
+        }
+      },
+      "users": {
+        "title": "User Management",
+        "description": "Manage all users in the system",
+        "searchPlaceholder": "Search by username, email, or nickname",
+        "noUsers": "No users yet",
+        "noUsersFound": "No matching users found",
+        "verifyEmailSuccess": "Email verified successfully",
+        "verifyEmailFailed": "Email verification failed: {{error}}",
+        "unverifyEmailSuccess": "Email verification cancelled successfully",
+        "unverifyEmailFailed": "Failed to cancel email verification: {{error}}",
+        "deleteSuccess": "User deleted successfully",
+        "deleteFailed": "User deletion failed: {{error}}",
+        "table": {
+          "username": "Username",
+          "avatar": "Avatar",
+          "email": "Email",
+          "nickname": "Nickname",
+          "role": "Role",
+          "emailVerified": "Email Verified",
+          "createdAt": "Created At",
+          "actions": "Actions",
+          "verified": "Verified",
+          "unverified": "Unverified",
+          "homepage": "Homepage",
+          "verifyEmail": "Verify Email",
+          "unverifyEmail": "Cancel Verification",
+          "delete": "Delete"
+        },
+        "pagination": {
+          "showing": "Showing {{start}} - {{end}} of {{total}}",
+          "previous": "Previous",
+          "next": "Next"
+        },
+        "deleteConfirm": {
+          "title": "Confirm User Deletion",
+          "description": "This action cannot be undone and will permanently delete the user and all their data.",
+          "cancel": "Cancel",
+          "confirm": "Confirm Delete",
+          "deleting": "Deleting..."
+        }
+      },
+      "save": "Save",
+      "saving": "Saving...",
+      "saveSuccess": "Saved successfully",
+      "saveFailed": "Save failed: {{error}}"
+    }
+  },
+  "components": {
+    "d3": {
+      "heatmap": {
+        "noData": "No HeatMap Data",
+        "note": "Note",
+        "notes": "Notes",
+        "noNotesOnDate": "No notes on this date",
+        "daysOfWeek": {
+          "Sun": "Sun",
+          "Mon": "Mon",
+          "Tue": "Tue",
+          "Wed": "Wed",
+          "Thu": "Thu",
+          "Fri": "Fri",
+          "Sat": "Sat"
+        }
+      }
+    },
+    "navBar": {
+      "back": "Back"
+    },
+    "openKey": {
+      "permissions": "Permissions",
+      "example": "Example",
+      "edit": "Edit",
+      "delete": "Delete",
+      "deleting": "Deleting...",
+      "deleteSuccess": "Delete successful",
+      "deleteFailed": "Delete failed",
+      "copySuccess": "Content copied to clipboard",
+      "copyFailed": "Failed to copy content to clipboard",
+      "usageCount": "Calls",
+      "lastUsedAt": "Last Used",
+      "neverUsed": "Never used",
+      "viewLogs": "View Logs",
+      "usageLogs": "Usage Logs",
+      "noLogs": "No call records yet",
+      "endpoint": "Endpoint",
+      "method": "Method",
+      "clientIp": "IP Address",
+      "statusCode": "Status",
+      "responseTime": "Response Time",
+      "loadMore": "Load More",
+      "editPermissions": "Edit Permissions",
+      "copy": "Copy",
+      "exampleContent": "This is a note sent using OpenKey.",
+      "exampleTag": "FromOpenKey",
+      "exampleTag2": "Tag2"
+    },
+    "openKeyEditModel": {
+      "selectAll": "Select All",
+      "save": "Save",
+      "saving": "Saving...",
+      "saveSuccess": "Save successful",
+      "saveFailed": "Save failed",
+      "minimumPermission": "At least one permission is required",
+      "permissions": {
+        "SENDROTE": "Create Rote",
+        "GETROTE": "Get Rote",
+        "EDITROTE": "Edit Rote (Including Delete)",
+        "SENDARTICLE": "Create Article",
+        "ADDREACTION": "Add Reaction",
+        "DELETEREACTION": "Delete Reaction",
+        "EDITPROFILE": "Edit Profile"
+      }
+    },
+    "sidebarSearch": {
+      "placeholder": "Search notes..."
+    },
+    "randomRote": {
+      "title": "Random Review",
+      "publicNoteHint": "This is a public note from another user."
+    },
+    "roteInputSimple": {
+      "contentPlaceholder": "Ctrl + ↵ to send",
+      "pin": "Pin",
+      "archive": "Archive",
+      "articleReference": "Reference Article",
+      "send": "Send",
+      "uploadFailed": "Attachment upload failed",
+      "sending": "Sending...",
+      "sendSuccess": "Sent successfully",
+      "sendFailed": "Failed to send",
+      "publicWarning": "Your content will be public and visible to everyone.",
+      "referencedArticles": "Referenced Articles",
+      "stateOptions": {
+        "public": "Public",
+        "private": "Private"
+      },
+      "error": {
+        "emptyContent": "Content cannot be empty"
+      }
+    },
+    "roteItem": {
+      "details": "Details",
+      "pinned": "Pin",
+      "unpinned": "Unpin",
+      "edit": "Edit",
+      "archive": "Archive",
+      "unarchive": "Unarchive",
+      "share": "Share",
+      "delete": "Delete",
+      "review": "Review",
+      "isPinned": "Pinned",
+      "isPublic": "Public",
+      "isArchived": "Archived",
+      "copyLink": "Copy link",
+      "expand": "Expand",
+      "subscriptionReminder": "Subscription Reminder",
+      "inDevelopment": "In Development",
+      "messages": {
+        "deleting": "Deleting...",
+        "deleteSuccess": "Delete successful",
+        "deleteFailed": "Delete failed",
+        "editing": "Editing...",
+        "editSuccess": "successful",
+        "editFailed": "Edit failed",
+        "privateNoteCannotShare": "Private note cannot be shared",
+        "privateNoteShareDescription": "You need to set the note to public before sharing it",
+        "setPublicAndShare": "Set Public and Share"
+      },
+      "linkCopied": "Link copied to clipboard"
+    },
+    "roteList": {
+      "empty": "Nothing here",
+      "collapsedCount": "Show {{count}} more notes from {{name}}",
+      "collapse": "Collapse"
+    },
+    "tagMap": {
+      "noTags": "No tags yet",
+      "expand": "Expand",
+      "expandMore": "Expand More",
+      "collapse": "Collapse"
+    },
+    "tagSelector": {
+      "selectTags": "Select tags...",
+      "tagsCount": "{{count}} tags",
+      "searchTags": "Search tags..."
+    },
+    "productHunt": {
+      "findUsOn": "FIND US ON",
+      "scheduledDate": "Scheduled for {{date}}",
+      "votePrompt": "Support us by voting on Product Hunt! 🥺 "
+    },
+    "verifiedIcon": {
+      "tooltip": "Verified Email"
+    }
+  },
+  "article": {
+    "editor": {
+      "title": "Create Article",
+      "editTitle": "Edit Article",
+      "editorLabel": "Editor",
+      "previewLabel": "Preview",
+      "previewPlaceholder": "Preview will appear here",
+      "contentPlaceholder": "# Article Title",
+      "cancel": "Cancel",
+      "save": "Save Article",
+      "update": "Update Article",
+      "emptyContent": "Content cannot be empty",
+      "needTitle": "Please add a level-1 heading (# Title) in the content",
+      "createSuccess": "Article created",
+      "createFailed": "Failed to create",
+      "updateSuccess": "Article updated",
+      "updateFailed": "Failed to update",
+      "uploadingPlaceholder": "Uploading {{name}}...",
+      "uploadFailedPlaceholder": "Upload failed: {{name}}",
+      "editLabel": "Edit",
+      "uploadFailed": "Upload failed: {{name}}",
+      "markdownSyntax": "Markdown Syntax",
+      "syntaxBoldItalic": "Bold & Italic",
+      "syntaxBoldText": "Bold",
+      "syntaxItalicText": "Italic",
+      "syntaxHeader": "Headers",
+      "syntaxH1": "Level 1",
+      "syntaxH2": "Level 2",
+      "syntaxLinkImage": "Link & Image",
+      "syntaxLinkText": "Text",
+      "syntaxLinkUrl": "URL",
+      "syntaxImageDesc": "Desc",
+      "syntaxImageLink": "Image link",
+      "syntaxImageTip": "Tip: Paste images directly to upload automatically",
+      "syntaxList": "List",
+      "syntaxListItem": "Item 1",
+      "syntaxQuoteCode": "Quote & Code",
+      "syntaxQuote": "Quote",
+      "syntaxCodeBlock": "Language",
+      "syntaxFullGuide": "Full Writing Guide",
+      "wordsCount": "{{count}} words",
+      "download": "Download Markdown"
+    },
+    "actions": {
+      "copyLink": "Copy Link",
+      "linkCopied": "Link copied",
+      "edit": "Edit Article",
+      "delete": "Delete Article",
+      "deleting": "Deleting...",
+      "deleteConfirm": "Are you sure you want to delete this article? This action cannot be undone.",
+      "deleteSuccess": "Article deleted",
+      "deleteFailed": "Failed to delete"
+    },
+    "selection": {
+      "title": "Select Article",
+      "createNew": "Create Article",
+      "createNewDesc": "Create a new Markdown article",
+      "noArticles": "No articles yet, click the button above to create one"
+    },
+    "viewer": {
+      "title": "Article Preview",
+      "loadFailed": "Failed to load article",
+      "notFound": "Article content not found",
+      "edit": "Edit article"
+    }
+  },
+  "common": {
+    "timeAgo": {
+      "justNow": "Just now",
+      "secondsAgo": "{{count}} seconds ago",
+      "minutesAgo": "{{count}} minute ago",
+      "minutesAgo_plural": "{{count}} minutes ago",
+      "hoursAgo": "{{count}} hour ago",
+      "hoursAgo_plural": "{{count}} hours ago",
+      "daysAgo": "{{count}} day ago",
+      "daysAgo_plural": "{{count}} days ago",
+      "weeksAgo": "{{count}} week ago",
+      "weeksAgo_plural": "{{count}} weeks ago",
+      "monthsAgo": "{{count}} month ago",
+      "monthsAgo_plural": "{{count}} months ago",
+      "yearsAgo": "{{count}} year ago",
+      "yearsAgo_plural": "{{count}} years ago"
+    }
+  }
+}
